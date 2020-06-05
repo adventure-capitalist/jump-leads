@@ -97,13 +97,13 @@ class Lesson5 extends Component {
             <link rel="stylesheet" href="./styles/styles.css">
         </head>
     <body>... `}</pre>
-                    <p className="flowingText">These href links can be full file locations (absolute) but more often they are absolute, which means they are relative to the HTML file.</p>
-                    <p className="flowingText">This part can be a bit confusing, but basically you need to give the DOM step by step directions to the CSS file from it's current location (the HTML file).</p>
+                    <p className="flowingText">These href links can be full file locations (absolute) but more often they are shortened, or relative to the HTML file.</p>
+                    <p className="flowingText">This part can be a bit confusing, but basically you need to give the DOM step by step directions to the CSS file from its current location (the HTML file).</p>
                     <p className="flowingText">There are some things you need to know about shortening paths:</p>
                     <ul className="bulletedList">
                         <li>"." - means in this folder</li>
                         <li>".." - means go back one level in the folder structure</li>
-                        <li>"/" - this is used just like it is in the file explorer on your computer to separate instructions</li>
+                        <li>"/" - this is used just like it is in the file explorer on your computer to separate locations</li>
                     </ul>
                     <p className="flowingText">It is also possible to use these HTML style tags: <pre className="codeBlock">{`<style></style>`}</pre> to write a block of CSS inside the head of an html file. However, this is not good practice and should generally be avoided. Just know that this exists and you might see it mentioned in resources online.</p>
                     <p className="flowingText">Also note that any in-line style written in HTML style tags or even by using the style attribute of other HTML tags like this: <pre className="codeBlock">{`<h1 style="color: red;"></h1>`}</pre> will take precedence over stylesheets that are imported as links in the head of an HTML file.</p>
