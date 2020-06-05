@@ -49,10 +49,10 @@ class Lesson5 extends Component {
                     <p className="flowingText">Another brilliant question. CSS files will need to be saved in ".css" format. Once you've achieved this, it's pretty straight forward!</p>
                     <p className="flowingText">Unlike HTML, CSS doesn't use tags. It instead uses <strong>selectors</strong> which, as the name suggests, help select, or target the specific elements that you want to add styles to.</p>
                     <p className="flowingText">Here is the vocabulary for the different parts of one line of CSS:</p>
-                    <pre>{`selector { property: value; }`}</pre>
+                    <pre className="codeBlock">{`selector { property: value; }`}</pre>
                     <p className="flowingText">As you can see you first target a <strong>selector</strong> then you select a <strong>property</strong> which you would like to assign a <strong>value</strong>.</p>
                     <p className="flowingText">Now this might seem a bit abstract. So let's clear things up with a real life example:</p>
-                    <pre>{`h1 { color: red; }`}</pre>
+                    <pre className="codeBlock">{`h1 { color: red; }`}</pre>
                     <p className="flowingText">You might be able to guess by now that this would select all h1 elements in your HTML and change the color to red.</p>
                     <p className="flowingText">NOTE: CSS uses the American spellings for things like "color" and "center" if you use the UK spellings, it won't work I'm afraid.</p>
                 <h3 className="sectionHeading">What kinds of selectors are there?</h3>
@@ -80,7 +80,7 @@ class Lesson5 extends Component {
                     <p className="flowingText">The level of specificity also determines which styles will be applied in the event of a precedence "tie" with more general styles losing out to more exact ones.</p>
                     <p className="flowingText">It is also worth noting that there is an escape hatch which will gurantee that a style will win in these situations.</p>
                     <p className="flowingText">This escape hatch takes the shape of the important flag and is used like this:</p>
-                         <pre>{`h1 { color: red !important; }`}</pre>
+                         <pre className="codeBlock">{`h1 { color: red !important; }`}</pre>
                     <p className="flowingText">It is better if you resolve these style conflicts peacefully by readjusting how your selectors are working. The brute force use of the important flag should be left as a last resort.</p>
 
                 <h3 className="sectionHeading">Wait, how is the CSS file able to select from HTML files?</h3>
@@ -91,7 +91,7 @@ class Lesson5 extends Component {
                     <p className="flowingText">Some people use a pre-set "CSS reset" file, designed to negate everything in the user agent stylesheets so they start with a clean canvas.</p>
                 <h3 className="sectionHeading">Ok how do I import, or link up, my stylesheets and my HTML?</h3>
                     <p className="flowingText">Style sheets are imported using link tags in the head of the HTML document. This looks like this: </p>
-<pre>{`<!DOCTYPE html>
+<pre className="codeBlock">{`<!DOCTYPE html>
     <html>
         <head>
             <link rel="stylesheet" href="./styles/styles.css">
@@ -105,8 +105,9 @@ class Lesson5 extends Component {
                         <li>".." - means go back one level in the folder structure</li>
                         <li>"/" - this is used just like it is in the file explorer on your computer to separate instructions</li>
                     </ul>
-                    <p className="flowingText">It is also possible to use the HTML <pre>{`<style></style>`}</pre> tags to write a block of CSS inside the head of an html file. However, this is not good practice and should generally be avoided. Just know that this exists and you might see it mentioned in resources online.</p>
-                    <p className="flowingText">Also note that any in-line style written in HTML style tags or even by using the style attribute of other HTML tags like this: <pre>{`<h1 style="color: red;"></h1>`}</pre> will take precedence over stylesheets that are imported as links in the head of an HTML file.</p>
+                    <p className="flowingText">It is also possible to use these HTML style tags: <pre className="codeBlock">{`<style></style>`}</pre> to write a block of CSS inside the head of an html file. However, this is not good practice and should generally be avoided. Just know that this exists and you might see it mentioned in resources online.</p>
+                    <p className="flowingText">Also note that any in-line style written in HTML style tags or even by using the style attribute of other HTML tags like this: <pre className="codeBlock">{`<h1 style="color: red;"></h1>`}</pre> will take precedence over stylesheets that are imported as links in the head of an HTML file.</p>
+                    <p className="flowingText">Now feel free to get out there and start styling your heart out!</p>
             </div>}
 
             </div>

@@ -29,16 +29,28 @@ h1{
 
 .lessonBody {
   text-align: left;
-  margin: 5vh;
+  margin: 5vw;
 }
 
 .graphic {
   max-width: 80vw;
+  margin-left: 5vw;
 }
 
 .flowingText {
   padding-left: 3vw;
 }
 
+.codeBlock {
+  margin-left: 10vw;
+}
+
+.listHeading {
+  margin-left: -2vw;
+}
+
+.bulletedList li {
+  margin-left: 3vw;
+}
 
 
