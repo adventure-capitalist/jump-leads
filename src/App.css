@@ -3,7 +3,7 @@ h1{
   color: white;
   background-color: black;
   padding: 3vh;
-  margin-bottom: 0;
+  margin: 0;
 }
 
 .lessonTitle {
@@ -17,8 +17,9 @@ h1{
 }
 .dashIcon {
   font-size: 4vh;
-  margin-block-start: 0.83em;
-  margin-block-end: 0.83em;
+  margin: 0.83em;
+  margin-left: 1vw;
+  margin-right: 1vw;
 }
 
 .ready {
