@@ -97,7 +97,7 @@ class Lesson5 extends Component {
                         <li> em/rem: useful for determining the size of fonts</li>
                         <li> vh/vw: viewport height/width - viewport here, means screen. These units are a fraction of the size of the screen</li>
                         <li> %: percentages - percentages of the full size of the screen. </li>
-                        <h5 className="listHeading">Intersting values:</h5>
+                        <h5 className="listHeading">Interesting values:</h5>
                         <li> max( ): dynamically evaluates to the higher of two measurements depending on the situation or screen size.</li>
 <pre>{`h1 {
     width: max(200px, 20vw);
