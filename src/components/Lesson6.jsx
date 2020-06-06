@@ -11,8 +11,10 @@ class Lesson6 extends Component {
     render() { 
         return ( 
             <div className="mainHolder">
-            <h2 className="lessonTitle">Lesson 6: CSS Declarations</h2>
-            <GoDashboard onClick={() => this.props.callback(null)} className="dashIcon"/>
+                <div className="lessonHeader">
+                    <h2 className="lessonTitle">Lesson 6: CSS Declarations</h2>
+                    <GoDashboard onClick={() => this.props.callback(null)} className="dashIcon"/>
+            </div>
             <div className="spacer"></div>
             <div className="lessonBody">
                 <h3 className="sectionHeading">What kinds of CSS selectors can I use?</h3>
