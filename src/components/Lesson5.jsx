@@ -36,7 +36,7 @@ class Lesson5 extends Component {
                         <li>Colour and Background</li>
                         <li>Spacing and Positioning</li>
                         <li>Size of text areas/images etc.</li>
-                        <li>Bullet points and Tables</li>
+                        <li>Bullet points and Links</li>
                         <li>Outlines and borders</li>
                     </ul>
                     <p className="flowingText">I told you they would sound familiar!</p>
@@ -103,8 +103,9 @@ class Lesson5 extends Component {
                     <p className="flowingText">It is also possible to use these HTML style tags: <pre className="codeBlock">{`<style></style>`}</pre> to write a block of CSS inside the head of an html file. However, this is not good practice and should generally be avoided. Just know that this exists and you might see it mentioned in resources online.</p>
                     <p className="flowingText">Also note that any in-line style written in HTML style tags or even by using the style attribute of other HTML tags like this: <pre className="codeBlock">{`<h1 style="color: red;"></h1>`}</pre> will take precedence over stylesheets that are imported as links in the head of an HTML file.</p>
                     <p className="flowingText">Now feel free to get out there and start styling your heart out!</p>
+                    <button className="ready" onClick={() => this.props.callback(<Challenge5 callback={this.props.callback}/>)}>Challenge</button>
             </div>
-            <button className="ready" onClick={() => this.props.callback(<Challenge5 callback={this.props.callback}/>)}>Challenge</button>
+            
             </div>
          );
     }

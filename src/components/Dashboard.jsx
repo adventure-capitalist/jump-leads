@@ -33,6 +33,12 @@ class Dashboard extends Component {
             </div>
             <div className="lessonCard">
                 <h2 className="lessonTitle">Lesson 6: CSS Declarations</h2>
+                <ul>
+                    <li>Text, Font, Colour and Background</li>
+                    <li>Spacing, Positioning and Size</li>
+                    <li>Bullets, Links and Borders</li>
+                    <li>How do we measure in CSS?</li>
+                </ul>
                 <button className="ready" onClick={() => this.clickHandler(<Lesson6 callback={this.challengeCallback}/>)}>Jump In</button>
             </div>
 
