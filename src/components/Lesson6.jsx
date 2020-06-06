@@ -3,8 +3,9 @@ import "../App.css";
 import cat from "../images/cat.jpg";
 import press from "../images/press.jpg";
 import Challenge6 from "./Challenge6";
+import {GoDashboard} from "react-icons/go";
 
-class Lesson5 extends Component {
+class Lesson6 extends Component {
 
 
     render() { 
@@ -140,4 +141,4 @@ class Lesson5 extends Component {
     }
 }
  
-export default Lesson5;
+export default Lesson6;
