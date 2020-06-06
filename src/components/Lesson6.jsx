@@ -8,16 +8,21 @@ class Lesson5 extends Component {
     render() { 
         return ( 
             <div className="mainHolder">
-            <h2 className="lessonTitle">Lesson 5: Intro To CSS</h2>
+            <h2 className="lessonTitle">Lesson 6: CSS Selectors</h2>
             <div className="spacer"></div>
             <div className="lessonBody">
-                <h3 className="sectionHeading">What is CSS?</h3>
-                    <p className="flowingText">CSS stands for Cascading Style Sheets</p>
-                    <p className="flowingText">"Cascading" (yes, like a waterfall) refers to how the DOM runs down these style instructions from the top to the bottom.</p>
-                    <p className="flowingText">This behaviour essentially means that if you give an instruction at the top of your sheet, another similar instruction at the bottom can overwrite the first instruction.</p>
-                    <p className="flowingText">Taken one step further, if you have two separate style sheets imported as separate files, the instructions in the file that is imported second will take precedence.</p>
-                    <p className="flowingText">"So the last will come first, and the first will, well, be overwritten"? </p>
-                    <p className="flowingText">It's actually slightly more complicated than that, but we will discuss which style gets overwritten and which gets to live on at the very end, so stay tuned!</p>
+                <h3 className="sectionHeading">What kinds of CSS selectors can I use?</h3>
+                <p>There are a many different kinds of selectors that are designed to style the following things:</p>
+                <ul className="bulletedList">
+                        <li>Text and Font</li>
+                        <li>Color and Background</li>
+                        <li>Spacing and Positioning</li>
+                        <li>Size of text areas/images etc.</li>
+                        <li>Bullet points and Tables</li>
+                        <li>Outlines and borders</li>
+                    </ul>
+                <p>In this lesson, we will go through each of these catagories showing you all of the different tools that you have available to you.</p>
+                    
                     <img className="graphic" src={css}/>
                     <p className="flowingText">Unlike HTML, which is concerned only about the content and structure of information or images on a page, CSS is a language which is used exclusively for aesthetics and design.</p>
                     <p className="flowingText">It is even possible to create animations using only CSS. That being said, Javascript will take your animations to the next level, and allow for users to really interact with your creations. </p>
@@ -26,14 +31,7 @@ class Lesson5 extends Component {
                     <p className="flowingText">Great question! With CSS, it is possible to do most of the style things that you could reasonably achieve in Microsoft Word, and a bit extra when it comes to simple animations.</p>
                     <p className="flowingText">You might find lots of these features very similar to your word processing experiences. This makes sense, because webpages are afterall, documents.</p>
                     <p className="flowingText">Some types of things you can style with CSS:</p>
-                    <ul className="bulletedList">
-                        <li>Text and Font</li>
-                        <li>Color and Background</li>
-                        <li>Spacing and Positioning</li>
-                        <li>Size of text areas/images etc.</li>
-                        <li>Bullet points and Tables</li>
-                        <li>Outlines and borders</li>
-                    </ul>
+                    
                     <p className="flowingText">I told you they would sound familiar!</p>
                 <h3 className="sectionHeading">How do I write these CSS instructions?</h3>
                     <p className="flowingText">Another brilliant question. CSS files will need to be saved in ".css" format. Once you've achieved this, it's pretty straight forward!</p>
