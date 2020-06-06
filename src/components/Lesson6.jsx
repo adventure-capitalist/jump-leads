@@ -17,8 +17,8 @@ class Lesson6 extends Component {
             </div>
             <div className="spacer"></div>
             <div className="lessonBody">
-                <h3 className="sectionHeading">What kinds of CSS selectors can I use?</h3>
-                <p>There are a many different kinds of selectors that are designed to style the following things:</p>
+                <h3 className="sectionHeading">What kinds of CSS properties can I use?</h3>
+                <p>There are a many different kinds of properties that are designed to style the following things:</p>
                 <ul className="bulletedList">
                         <li>Text and Font</li>
                         <li>Colour and Background</li>
@@ -32,7 +32,7 @@ class Lesson6 extends Component {
                     <p className="flowingText">Firstly, you should know that fonts as we think of them are actually downloaded and stored on your machine. Much like in the days of printing presses there is an image for every single letter both upper carries
                     and lower case. You will often need to link to these images or download fonts to make them work on your machine. Bear in mind that not all fonts are free to use.</p>
                     <img className="graphic" src={press}/>
-                    <p className="flowingText">Here is a list of some of the most useful selectors available surrounding fonts and text:</p>
+                    <p className="flowingText">Here is a list of some of the most useful properties available surrounding fonts and text:</p>
                     <ul className="bulletedList">
                         <li>font-style: italic, normal, etc.</li>
                         <li>font-weight: normal, bold, semi-bold</li>
@@ -56,7 +56,7 @@ class Lesson6 extends Component {
                         <li>background-image: sets a background image</li>
                     </ul>
                 <p>There are a few other background properties in existance that will give you more customisation options in particular when it comes to background images, but these are the main two.</p>
-                <p>Again, you'll continue to discover more and more CSS properties throughout your journey as a developer, for now it is important that you practice using some common selectors and assigning them properties and values. It is less important that you try to memorise all the possible CSS properties available to you.</p>
+                <p>Again, you'll continue to discover more and more CSS properties throughout your journey as a developer, for now it is important that you practice using some common properties and assigning them properties and values. It is less important that you try to memorise all the possible CSS properties available to you.</p>
                 <h3 className="sectionHeading">What can I do with Spacing and Positioning?</h3>
                     <p className="flowingText">There are two main areas of spacing which you will need to know.</p>
                     <p className="flowingText">Namely:</p>
@@ -71,7 +71,7 @@ class Lesson6 extends Component {
                     <p className="flowingText">Or you can specify the spacing on each side of an element in one of two ways.</p>
                     <p className="flowingText">By selecting each side one after in clockwise order (top/right/bottom/left):</p>
                     <pre className="codeBlock">{`h1 { margin: 0 0 0 0; }`}</pre>
-                    <p className="flowingText">Or more with more semantic selectors:</p>
+                    <p className="flowingText">Or more with more semantic properties:</p>
                     <pre className="codeBlock">{`h1 { margin-bottom: 0 }`}</pre>
                     <p className="flowingText">When it comes to positioning, there are more options. Some of the most properties include: </p>
                     <ul className="bulletedList">
