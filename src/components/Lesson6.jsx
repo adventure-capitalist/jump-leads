@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import "../App.css";
-import css from "../images/css.gif";
+import cat from "../images/cat.jpg";
 
 class Lesson5 extends Component {
 
@@ -22,18 +22,26 @@ class Lesson5 extends Component {
                         <li>Outlines and borders</li>
                     </ul>
                 <p>In this lesson, we will go through each of these catagories showing you all of the different tools that you have available to you.</p>
-                    
-                    <img className="graphic" src={css}/>
-                    <p className="flowingText">Unlike HTML, which is concerned only about the content and structure of information or images on a page, CSS is a language which is used exclusively for aesthetics and design.</p>
-                    <p className="flowingText">It is even possible to create animations using only CSS. That being said, Javascript will take your animations to the next level, and allow for users to really interact with your creations. </p>
+                <h3 className="sectionHeading">What options are available for Text and Font?</h3>
+                    <p className="flowingText">Firstly, you should know that fonts as we think of them are actually downloaded and stored on your machine. Much like in the days of printing presses there is an image for every single letter both upper carries
+                    and lower case. You will often need to link to these images or download fonts to make them work on your machine. Bear in mind that not all fonts are free to use.</p>
+                    <p className="flowingText">Here is a list of the selectors available surrounding fonts and text:</p>
+                    <ul className="bulletedList">
+                        <li>font-style: italic, normal, etc.</li>
+                        <li>font-weight: normal, bold, semi-bold</li>
+                        <li>font-size: you can either use words like "medium" or specific units like 12px (more on the types of units later)</li>
+                        <li>line-height: the spacing between lines. again you can use words like "normal", or specific units to set this value. (double-spaced, single-spaced)</li>
+                        <li>font-family: selects the font, depends on the available fonts on your PC as well as the OS</li>
+                    </ul>
                     <p className="flowingText">But this lesson is on CSS, Javascript will have to wait.</p>
-                <h3 className="sectionHeading">What beautification options do I have with CSS?</h3>
+                <h3 className="sectionHeading">What can I do with Color and Background?</h3>
                     <p className="flowingText">Great question! With CSS, it is possible to do most of the style things that you could reasonably achieve in Microsoft Word, and a bit extra when it comes to simple animations.</p>
                     <p className="flowingText">You might find lots of these features very similar to your word processing experiences. This makes sense, because webpages are afterall, documents.</p>
                     <p className="flowingText">Some types of things you can style with CSS:</p>
                     
                     <p className="flowingText">I told you they would sound familiar!</p>
-                <h3 className="sectionHeading">How do I write these CSS instructions?</h3>
+                <h3 className="sectionHeading">What can I do with Spacing and Positioning?</h3>
+                <img className="graphic" src={cat}/>
                     <p className="flowingText">Another brilliant question. CSS files will need to be saved in ".css" format. Once you've achieved this, it's pretty straight forward!</p>
                     <p className="flowingText">Unlike HTML, CSS doesn't use tags. It instead uses <strong>selectors</strong> which, as the name suggests, help select, or target the specific elements that you want to add styles to.</p>
                     <p className="flowingText">Here is the vocabulary for the different parts of one line of CSS:</p>
@@ -43,7 +51,7 @@ class Lesson5 extends Component {
                     <pre className="codeBlock">{`h1 { color: red; }`}</pre>
                     <p className="flowingText">You might be able to guess by now that this would select all h1 elements in your HTML and change the color to red.</p>
                     <p className="flowingText">NOTE: CSS uses the American spellings for things like "color" and "center" if you use the UK spellings, it won't work I'm afraid.</p>
-                <h3 className="sectionHeading">What kinds of selectors are there?</h3>
+                <h3 className="sectionHeading">What sort of size measurements are there?</h3>
                     <p className="flowingText">There are a few main types of selectors:</p>
                     <ul className="bulletedList">
                         <h5 className="listHeading">The basic ones:</h5>
@@ -62,7 +70,7 @@ class Lesson5 extends Component {
                         <li> h1 > p - targets downstairs neighbour elements (children) only. It is also possible to forego the > and leave a space, but this will target children, and grandchildren etc. </li>
                     </ul>
                 
-                <h3 className="sectionHeading">There are so many options, but how can I target my styles well?</h3>
+                <h3 className="sectionHeading">What about bullet points and tables?</h3>
                     <p className="flowingText">There is a balance to be struck between oversharing styles and being too exclusive. Generally you should never be using HTML element names alone as a selector. </p>
                     <p className="flowingText">The use of Ids as CSS selectors has widely fallen out of favour because it is too specific and the styles cannot be reused.</p>
                     <p className="flowingText">The level of specificity also determines which styles will be applied in the event of a precedence "tie" with more general styles losing out to more exact ones.</p>
@@ -71,7 +79,7 @@ class Lesson5 extends Component {
                          <pre className="codeBlock">{`h1 { color: red !important; }`}</pre>
                     <p className="flowingText">It is better if you resolve these style conflicts peacefully by readjusting how your selectors are working. The brute force use of the important flag should be left as a last resort.</p>
 
-                <h3 className="sectionHeading">Wait, how is the CSS file able to select from HTML files?</h3>
+                <h3 className="sectionHeading">What can I do in terms of borders and outlines?</h3>
                     <p className="flowingText">CSS files are usually imported in the head of an HTML file as a style sheet. The browser is actually the one that "unpacks" the CSS file that came along with the HTML and carries out the CSS instructions on the HTML.</p>
                     <p className="flowingText">Think of the HTML as the bits you get in an IKEA flat pack. The parts usually have stickers with letters or numbers on them for labels. The instructions then tell you what to do with each labelled part, so that in the end you have beautiful furniture.</p>
                     <p className="flowingText">Now, it's also important to know that the browser has some very sparse in-built style sheets. These are called "user agent style sheets" Think of this as IKEA pre-assembling some things and cutting the boards for you. You cannot undo these basic default styles, but you can overwrite the with your own custom styles. Just like you cannot uncut the boards, but you can paint them.</p>
