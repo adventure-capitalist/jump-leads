@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import "../App.css";
 import css from "../images/css.gif";
+import Challenge5 from "./Challenge5";
+import {GoDashboard} from "react-icons/go";
 
 class Lesson5 extends Component {
 
@@ -8,7 +10,10 @@ class Lesson5 extends Component {
     render() { 
         return ( 
             <div className="mainHolder">
-            <h2 className="lessonTitle">Lesson 5: Intro To CSS</h2>
+                <div className="lessonHeader">
+                    <h2 className="lessonTitle">Lesson 5: Intro To CSS</h2>
+                    <GoDashboard onClick={() => this.props.callback(null)} className="dashIcon"/>
+                </div>
             <div className="spacer"></div>
             <div className="lessonBody">
                 <h3 className="sectionHeading">What is CSS?</h3>
@@ -28,7 +33,7 @@ class Lesson5 extends Component {
                     <p className="flowingText">Some types of things you can style with CSS:</p>
                     <ul className="bulletedList">
                         <li>Text and Font</li>
-                        <li>Color and Background</li>
+                        <li>Colour and Background</li>
                         <li>Spacing and Positioning</li>
                         <li>Size of text areas/images etc.</li>
                         <li>Bullet points and Tables</li>
@@ -88,7 +93,7 @@ class Lesson5 extends Component {
         </head>
     <body>... `}</pre>
                     <p className="flowingText">These href links can be full file locations (absolute) but more often they are shortened, or relative to the HTML file.</p>
-                    <p className="flowingText">This part can be a bit confusing, but basically you need to give the DOM step by step directions to the CSS file from its current location (the HTML file).</p>
+                    <p className="flowingText">This part can be a bit confusing, but basically you need to give the browser step by step directions to the CSS file from its current location (the HTML file).</p>
                     <p className="flowingText">There are some things you need to know about shortening paths:</p>
                     <ul className="bulletedList">
                         <li>"." - means in this folder</li>
@@ -99,10 +104,10 @@ class Lesson5 extends Component {
                     <p className="flowingText">Also note that any in-line style written in HTML style tags or even by using the style attribute of other HTML tags like this: <pre className="codeBlock">{`<h1 style="color: red;"></h1>`}</pre> will take precedence over stylesheets that are imported as links in the head of an HTML file.</p>
                     <p className="flowingText">Now feel free to get out there and start styling your heart out!</p>
             </div>
-
+            <button className="ready" onClick={() => this.props.callback(<Challenge5 callback={this.props.callback}/>)}>Challenge</button>
             </div>
          );
     }
 }
  
-export default Lesson5;
+export default Lesson5

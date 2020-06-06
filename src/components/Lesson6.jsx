@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import "../App.css";
 import cat from "../images/cat.jpg";
+import press from "../images/press.jpg";
 
 class Lesson5 extends Component {
 
@@ -15,7 +16,7 @@ class Lesson5 extends Component {
                 <p>There are a many different kinds of selectors that are designed to style the following things:</p>
                 <ul className="bulletedList">
                         <li>Text and Font</li>
-                        <li>Color and Background</li>
+                        <li>Colour and Background</li>
                         <li>Spacing and Positioning</li>
                         <li>Size of text areas/images etc.</li>
                         <li>Bullet points and Tables</li>
@@ -25,6 +26,7 @@ class Lesson5 extends Component {
                 <h3 className="sectionHeading">What options are available for Text and Font?</h3>
                     <p className="flowingText">Firstly, you should know that fonts as we think of them are actually downloaded and stored on your machine. Much like in the days of printing presses there is an image for every single letter both upper carries
                     and lower case. You will often need to link to these images or download fonts to make them work on your machine. Bear in mind that not all fonts are free to use.</p>
+                    <img className="graphic" src={press}/>
                     <p className="flowingText">Here is a list of the selectors available surrounding fonts and text:</p>
                     <ul className="bulletedList">
                         <li>font-style: italic, normal, etc.</li>
@@ -33,19 +35,32 @@ class Lesson5 extends Component {
                         <li>line-height: the spacing between lines. again you can use words like "normal", or specific units to set this value. (double-spaced, single-spaced)</li>
                         <li>font-family: selects the font, depends on the available fonts on your PC as well as the OS</li>
                     </ul>
-                    <p className="flowingText">But this lesson is on CSS, Javascript will have to wait.</p>
-                <h3 className="sectionHeading">What can I do with Color and Background?</h3>
-                    <p className="flowingText">Great question! With CSS, it is possible to do most of the style things that you could reasonably achieve in Microsoft Word, and a bit extra when it comes to simple animations.</p>
-                    <p className="flowingText">You might find lots of these features very similar to your word processing experiences. This makes sense, because webpages are afterall, documents.</p>
-                    <p className="flowingText">Some types of things you can style with CSS:</p>
-                    
-                    <p className="flowingText">I told you they would sound familiar!</p>
+                <h3 className="sectionHeading">What can I do with Colour and Background?</h3>
+                    <p className="flowingText">There are four formats for picking colours.</p>
+                    <ul className="bulletedList">
+                        <li>keywords: red, rebeccapurple, lightspringgreen (quite limited, good for mockups not for the final product)</li>
+                        <li>hexidecimal codes: a hash symbol followed by six characters (#ff0000) you can look these up.</li>
+                        <li>rgb(a): red/green/blue/apha codes. Can also be looked up. Alpha is a transparency indicator. rgb(255, 255, 255, 0)</li>
+                        <li>hsl(a): hue/saturation/luminance/alpa codes. Once again, can be looked up. Really good for animations. They look like this: hsla(270, 60%, 30%, 0.5)</li>   
+                    </ul>
+
                 <h3 className="sectionHeading">What can I do with Spacing and Positioning?</h3>
-                <img className="graphic" src={cat}/>
-                    <p className="flowingText">Another brilliant question. CSS files will need to be saved in ".css" format. Once you've achieved this, it's pretty straight forward!</p>
-                    <p className="flowingText">Unlike HTML, CSS doesn't use tags. It instead uses <strong>selectors</strong> which, as the name suggests, help select, or target the specific elements that you want to add styles to.</p>
-                    <p className="flowingText">Here is the vocabulary for the different parts of one line of CSS:</p>
-                    <pre className="codeBlock">{`selector { property: value; }`}</pre>
+                    <p className="flowingText">There are two main areas of spacing which you will need to know.</p>
+                    <p className="flowingText">Namely:</p>
+                    <ul className="bulletedList">
+                        <li>margin: buffer on the outside of the walls or border of the element</li>
+                        <li>padding: buffer on the inside of the walls of the element.</li>
+                    </ul>
+                    <p className="flowingText">This photo of a cat in a box demonstrates these different areas really well. What's more, this idea is often called box model. So who better to demonstrate than cats?</p>
+                    <img className="graphic" src={cat}/>
+                    <p className="flowingText">Now, you can either declare margin or padding for all four sides of a box equally by saying</p>
+                    <pre className="codeBlock">{`h1 { margin: 0; }`}</pre>
+                    <p className="flowingText">Or you can specify the spacing on each side of an element in one of two ways.</p>
+                    <p className="flowingText">By selecting each side one after in clockwise order (top/right/bottom/left):</p>
+                    <pre className="codeBlock">{`h1 { margin: 0 0 0 0; }`}</pre>
+                    <p className="flowingText">Or more with more semantic selectors:</p>
+                    <pre className="codeBlock">{`h1 { margin-bottom: 0 }`}</pre>
+                    
                     <p className="flowingText">As you can see you first target a <strong>selector</strong> then you select a <strong>property</strong> which you would like to assign a <strong>value</strong>.</p>
                     <p className="flowingText">Now this might seem a bit abstract. So let's clear things up with a real life example:</p>
                     <pre className="codeBlock">{`h1 { color: red; }`}</pre>
