@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Lesson5 from "./Lesson5";
 import Lesson6 from "./Lesson6";
+import Lesson7 from "./Lesson7";
 
 class Dashboard extends Component {
     state = { 
@@ -40,6 +41,16 @@ class Dashboard extends Component {
                     <li>How do we measure in CSS?</li>
                 </ul>
                 <button className="ready" onClick={() => this.clickHandler(<Lesson6 callback={this.challengeCallback}/>)}>Jump In</button>
+            </div>
+            <div className="lessonCard">
+                <h2 className="lessonTitle">Lesson 7: CSS Layouts</h2>
+                <ul>
+                    <li>History of tables</li>
+                    <li>CSS Box model</li>
+                    <li>How to deal with overflow</li>
+                    <li>The issue with float</li>
+                </ul>
+                <button className="ready" onClick={() => this.clickHandler(<Lesson7 callback={this.challengeCallback}/>)}>Jump In</button>
             </div>
 
         </div>
