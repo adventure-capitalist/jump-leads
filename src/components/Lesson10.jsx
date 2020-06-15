@@ -39,20 +39,48 @@ class Lesson10 extends Component {
                         <li> backgrounds</li>
                         <li> animation</li>
                     </ul> 
-                    <img className="graphic" src={flexbox}/>
-                    <p className="flowingText">Items will be laid out either along the main axis, or the cross axis. The orientation of these axies depends on the flex-direction property. (In other words, the main axis can sometimes be vertical!)</p>
-                <h3 className="sectionHeading">What are my options with Flexbox?</h3>
-                    <p className="flowingText">There are two different kinds of properties when it comes to flex box. There are properties that you apply to the parent, or the flex container, and then there are properties that you apply to the child element, or the flex item.</p> 
-                <h3 className="sectionHeading">What properties can I apply to the flex container?</h3>
-                <ul className="bulletedList">
-                        <li>display - this is how you implement the flex box layout</li>
-                        <li>flex-direction - determines the direction of the main axis</li>
-                        <li>flex-wrap - sets whether or not flex items must fit on one line or if they can move to the next</li>
-                        <li>justify-content - aligns the flex items along the main axis</li>
-                        <li>align-items - defines how items are aligned on the cross axis</li>
-                        <li>align-content - adjusts the line height of the different rows along the main axis</li>
-                    </ul> 
-                    <h3 className="sectionHeading">What properties can I apply to the flex items?</h3>
+                <h3 className="sectionHeading">What are the shadows?</h3>
+                    <p className="flowingText">There are two new kinds of shadows; text shadows and box shadows.</p>
+                    <p className="flowingText">Text shadows, add a border or a shadow that traces the outline of the font.</p>
+                <h3 className="sectionHeading">Box shadows add a border or a shadow that traces the outlien of a box.</h3>
+                <pre className="codeBlock">{`
+.myClass {
+    text-shadow: 1px 1px 2px blue;
+    box-shadow: 2px 2px 5px red;
+}
+                
+                `}</pre>
+                    <p className="flowingText">Both require you to determine: an x-offset and a y-offset, a radius determining how far that that the shadow spreads and the shadow colour.</p>
+                    <p className="flowingText">However, with the box shadow you can also use the 'inset' property to place the shadow inside the box as opposed to outside.</p>
+                <h3 className="sectionHeading">What is new in terms of borders?</h3>
+                    <p className="flowingText">There are two new border properties as well! Border radius, and border image.</p>
+                    <p className="flowingText">Border radius allows you to determine how round the corners of a border are.</p>
+                <h3 className="sectionHeading">Border image allows you to draw the same image around an item like a border. (A border of love hearts or something).</h3>
+                <pre className="codeBlock">{`
+.myClass {
+    border-radius: 50%;
+    border-image:
+        url("https://mdn.mozillademos.org/files/4127/border.png")  /* source */
+        27 /        /* slice */
+        36px        /* width */
+        18px        /* outset */
+        round;      /* repeat */
+};
+                
+                `}</pre>
+                <h3 className="sectionHeading">What about backgrounds? Surely there can be no updates to backgrounds?</h3>
+                    <p className="flowingText">Sorry, but that is not true my friend. It is now possible to have multiple backgrounds listed in a comma separated list.</p>
+                    <p className="flowingText">It is worth noting that you should include the solid colors last after any images.</p>
+                    <p className="flowingText">These days it is also possible to create background gradients which consist of multiple colors both in a circle or line pattern.</p>
+                    <pre className="codeBlock">{`
+.myClass {
+    background: url(./images/img1.jpg) top left no-repeat, 
+        url(./images/img2.jpg) top right no-repeat #f00;
+    background: linear-gradient(135deg, red, blue);
+};
+                
+                `}</pre>
+                    <h3 className="sectionHeading">What about Animation? What is new here?</h3>
                 <ul className="bulletedList">
                         <li>order - controls the order that the flex items appear in the container</li>
                         <li>flex-grow/flex-shrink - determines whether or not the items are allowed to expand or contract acording to the space available</li>
