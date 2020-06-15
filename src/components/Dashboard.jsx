@@ -80,7 +80,7 @@ class Dashboard extends Component {
                 <ul>
                     <li>Shadows</li>
                     <li>Borders</li>
-                    <li>Background options</li>
+                    <li>Backgrounds</li>
                     <li>CSS Animations</li>
                 </ul>
                 <button className="ready" onClick={() => this.clickHandler(<Lesson10 callback={this.challengeCallback}/>)}>Jump In</button>
