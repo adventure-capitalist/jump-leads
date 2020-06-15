@@ -66,7 +66,7 @@ class Lesson5 extends Component {
                         <li> h1, h2 - the commas act like "and" meaning that the styles will be applied to each of these selectors at the same time</li>
                         <li> h1 + p - used to affect the closest downstairs neighbour (child element).</li>
                         <li> h1 ~ p - used to select multiple downstairs neighbours (children).</li>
-                        <li> h1 > p - targets downstairs neighbour elements (children) only. It is also possible to forego the > and leave a space, but this will target children, and grandchildren etc. </li>
+                        <li> h1 &gt; p - targets downstairs neighbour elements (children) only. It is also possible to forego the &gt; and leave a space, but this will target children, and grandchildren etc. </li>
                     </ul>
                 
                 <h3 className="sectionHeading">There are so many options, but how can I target my styles well?</h3>

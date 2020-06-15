@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import Lesson5 from "./Lesson5";
 import Lesson6 from "./Lesson6";
 import Lesson7 from "./Lesson7";
+import Lesson8 from "./Lesson8";
+import Lesson9 from "./Lesson9";
 
 class Dashboard extends Component {
     state = { 
@@ -51,6 +53,26 @@ class Dashboard extends Component {
                     <li>The issue with float</li>
                 </ul>
                 <button className="ready" onClick={() => this.clickHandler(<Lesson7 callback={this.challengeCallback}/>)}>Jump In</button>
+            </div>
+            <div className="lessonCard">
+                <h2 className="lessonTitle">Lesson 8: Responsive Design</h2>
+                <ul>
+                    <li>What is responsive design?</li>
+                    <li>Media Queries</li>
+                    <li>Mobile first development</li>
+                    <li>Breakpoints</li>
+                </ul>
+                <button className="ready" onClick={() => this.clickHandler(<Lesson8 callback={this.challengeCallback}/>)}>Jump In</button>
+            </div>
+            <div className="lessonCard">
+                <h2 className="lessonTitle">Lesson 9: Flexbox</h2>
+                <ul>
+                    <li>When should you use Flexbox?</li>
+                    <li>Flexbox properties</li>
+                    <li>flex container</li>
+                    <li>flex items</li>
+                </ul>
+                <button className="ready" onClick={() => this.clickHandler(<Lesson9 callback={this.challengeCallback}/>)}>Jump In</button>
             </div>
 
         </div>
