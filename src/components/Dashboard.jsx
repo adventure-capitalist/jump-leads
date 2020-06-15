@@ -74,6 +74,16 @@ class Dashboard extends Component {
                 </ul>
                 <button className="ready" onClick={() => this.clickHandler(<Lesson9 callback={this.challengeCallback}/>)}>Jump In</button>
             </div>
+            <div className="lessonCard">
+            <h2 className="lessonTitle">Lesson 10: Advanced CSS</h2>
+                <ul>
+                    <li>Shadows</li>
+                    <li>Borders</li>
+                    <li>Background options</li>
+                    <li>CSS Animations</li>
+                </ul>
+                <button className="ready" onClick={() => this.clickHandler(<Lesson10 callback={this.challengeCallback}/>)}>Jump In</button>
+            </div>
 
         </div>
         }
