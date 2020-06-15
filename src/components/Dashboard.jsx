@@ -4,6 +4,7 @@ import Lesson6 from "./Lesson6";
 import Lesson7 from "./Lesson7";
 import Lesson8 from "./Lesson8";
 import Lesson9 from "./Lesson9";
+import Lesson10 from "./Lesson10";
 
 class Dashboard extends Component {
     state = { 

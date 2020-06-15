@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {GoDashboard, GoBook} from "react-icons/go";
 import Lesson10 from './Lesson10';
 
-class Challenge9 extends Component {
+class Challenge10 extends Component {
 
     state = {  }
 
@@ -12,7 +12,7 @@ class Challenge9 extends Component {
             <div className="lessonHeader">
                 <h2 className="lessonTitle">Lesson 10 Advanced CSS</h2>
                 <div class="icons">
-                <GoBook onClick={() => this.props.callback(<Lesson9 callback={this.props.callback}/>)} className="dashIcon"/>
+                <GoBook onClick={() => this.props.callback(<Lesson10 callback={this.props.callback}/>)} className="dashIcon"/>
                 <GoDashboard onClick={() => this.props.callback(null)} className="dashIcon"/>
                 </div>
             </div>
