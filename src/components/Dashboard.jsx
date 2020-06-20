@@ -5,6 +5,7 @@ import Lesson7 from "./Lesson7";
 import Lesson8 from "./Lesson8";
 import Lesson9 from "./Lesson9";
 import Lesson10 from "./Lesson10";
+import Lesson11 from "./Lesson11";
 
 class Dashboard extends Component {
     state = { 
@@ -85,7 +86,16 @@ class Dashboard extends Component {
                 </ul>
                 <button className="ready" onClick={() => this.clickHandler(<Lesson10 callback={this.challengeCallback}/>)}>Jump In</button>
             </div>
-
+            <div className="lessonCard">
+            <h2 className="lessonTitle">Lesson 11: Intro to SVG</h2>
+                <ul>
+                    <li>What is SVG?</li>
+                    <li>How can we draw with SVG?</li>
+                    <li>What can SVG draw?</li>
+                    <li>SVG tips and tricks</li>
+                </ul>
+                <button className="ready" onClick={() => this.clickHandler(<Lesson11 callback={this.challengeCallback}/>)}>Jump In</button>
+            </div>
         </div>
         }
         {this.state.ready !== null && 

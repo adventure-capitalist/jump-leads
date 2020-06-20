@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import "../App.css";
 import Challenge10 from "./Challenge10";
 import {GoDashboard} from "react-icons/go";
-import flexbox from "../images/flexbox.png";
+import gradients from "../images/gradients.png";
 
 class Lesson10 extends Component {
 
@@ -80,14 +80,31 @@ class Lesson10 extends Component {
 };
                 
                 `}</pre>
+<img className="figure" src={gradients}/>
+<p className="flowingText">You can also make the gradients or backgrounds repeat by using the repeating keyword</p>
+<pre className="codeBlock">{`
+.myClass {
+    background: repeating-linear-gradient(#e66465, #e66465 20px, #9198e5 20px, #9198e5 25px);
+};   
+                `}</pre>
                     <h3 className="sectionHeading">What about Animation? What is new here?</h3>
                 <ul className="bulletedList">
-                        <li>order - controls the order that the flex items appear in the container</li>
-                        <li>flex-grow/flex-shrink - determines whether or not the items are allowed to expand or contract acording to the space available</li>
-                        <li>flex-basis - sets the starting size of each item</li>
-                        <li>align-self - acts as a single item override for the align items property</li>
+                        <li>tranformations - visually moves the element, but it doesn't actually change. (translate, rotate, scale, skew) </li>
+                        <li>transitions - allows you to slowly change the css over a number of seconds</li>
+                            <ul>
+                                <li>easing(in/out/etc.) - an action that accelerates, decelerates or both depending on how you specifiy it.</li>
+                            </ul>
+                        <li>animation - similar to transitions but they want to be perfect loops. I.e. they will start in the state they ended unless you say so.</li>
                     </ul> 
-                    
+                    <pre className="codeBlock">{`
+.myClass {
+    transform: scale(2) translateX(15px);
+    transition: margin-left 4s ease-in-out 1s;
+    animation: pulse 5s infinite;
+};   
+                `}</pre>
+
+<button className="ready" onClick={() => this.props.callback(<Challenge10 callback={this.props.callback}/>)}>Challenge</button>
             </div>
 
             </div>

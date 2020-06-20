@@ -45,7 +45,7 @@ class Lesson9 extends Component {
                         <li>flex-basis - sets the starting size of each item</li>
                         <li>align-self - acts as a single item override for the align items property</li>
                     </ul> 
-                    
+                    <button className="ready" onClick={() => this.props.callback(<Challenge9 callback={this.props.callback}/>)}>Challenge</button>
             </div>
 
             </div>
