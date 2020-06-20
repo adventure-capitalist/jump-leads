@@ -82,7 +82,7 @@ class Lesson11 extends Component {
                 `}</pre>
                     <p className="flowingText">The order that you draw the different elements in is called the injection order or the stacking order. This order is important because the last elements drawn get placed (or stacked) on top of the elements that came before them.</p>
                     <p className="flowingText">This is like the "bring to front" feature in Microsoft word". In this next part we will give examples of each kind of element and break down how to draw the different shapes.</p>
-                    <h3 className="sectionHeading">What about Animation? What is new here?</h3>
+                    <h3 className="sectionHeading">Examples of the shapes you can draw:</h3>
                     <pre className="codeBlock">{`
 <rect x="60" y="10" rx="10" ry="10" width="30" height="30"/>  
                 `}</pre>
