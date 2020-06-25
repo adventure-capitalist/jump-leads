@@ -25,7 +25,7 @@ class Lesson9 extends Component {
                     <p className="flowingText">Ultimately, this is up to you, you are free to use flexbox as extensively as your heart desires. However, you should start thinking about maybe using flexbox when you want to put things next to each other. If you are ever thinking about using float, stop yourself and try using flexbox instead!</p>
                 <h3 className="sectionHeading">How does it work?</h3>
                     <p className="flowingText">Well, if an ordinary layout is based on block and inline flow directions then flexbox is laid out according to flex flow directions like in this diagram:</p>
-                    <img className="graphic" src={flexbox}/>
+                    <img alt="flexbox graphic" className="graphic" src={flexbox}/>
                     <p className="flowingText">Items will be laid out either along the main axis, or the cross axis. The orientation of these axies depends on the flex-direction property. (In other words, the main axis can sometimes be vertical!)</p>
                 <h3 className="sectionHeading">What are my options with Flexbox?</h3>
                     <p className="flowingText">There are two different kinds of properties when it comes to flex box. There are properties that you apply to the parent, or the flex container, and then there are properties that you apply to the child element, or the flex item.</p> 

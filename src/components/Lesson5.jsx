@@ -23,7 +23,7 @@ class Lesson5 extends Component {
                     <p className="flowingText">Taken one step further, if you have two separate style sheets imported as separate files, the instructions in the file that is imported second will take precedence.</p>
                     <p className="flowingText">"So the last will come first, and the first will, well, be overwritten"? </p>
                     <p className="flowingText">It's actually slightly more complicated than that, but we will discuss which style gets overwritten and which gets to live on at the very end, so stay tuned!</p>
-                    <img className="graphic" src={css}/>
+                    <img alt="css animation" className="graphic" src={css}/>
                     <p className="flowingText">Unlike HTML, which is concerned only about the content and structure of information or images on a page, CSS is a language which is used exclusively for aesthetics and design.</p>
                     <p className="flowingText">It is even possible to create animations using only CSS. That being said, Javascript will take your animations to the next level, and allow for users to really interact with your creations. </p>
                     <p className="flowingText">But this lesson is on CSS, Javascript will have to wait.</p>

@@ -31,7 +31,7 @@ class Lesson6 extends Component {
                 <h3 className="sectionHeading">What options are available for Text and Font?</h3>
                     <p className="flowingText">Firstly, you should know that fonts as we think of them are actually downloaded and stored on your machine. Much like in the days of printing presses there is an image for every single letter both upper carries
                     and lower case. You will often need to link to these images or download fonts to make them work on your machine. Bear in mind that not all fonts are free to use.</p>
-                    <img className="graphic" src={press}/>
+                    <img alt="printing press" className="graphic" src={press}/>
                     <p className="flowingText">Here is a list of some of the most useful properties available surrounding fonts and text:</p>
                     <ul className="bulletedList">
                         <li>font-style: italic, normal, etc.</li>
@@ -65,7 +65,7 @@ class Lesson6 extends Component {
                         <li>padding: buffer on the inside of the walls of the element.</li>
                     </ul>
                     <p className="flowingText">This photo of a cat in a box demonstrates these different areas really well. What's more, this idea is often called box model. So who better to demonstrate than cats?</p>
-                    <img className="graphic" src={cat}/>
+                    <img alt="cat in a box" className="graphic" src={cat}/>
                     <p className="flowingText">Now, you can either declare margin or padding for all four sides of a box equally by saying</p>
                     <pre className="codeBlock">{`h1 { margin: 0; }`}</pre>
                     <p className="flowingText">Or you can specify the spacing on each side of an element in one of two ways.</p>

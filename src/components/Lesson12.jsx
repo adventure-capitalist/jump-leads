@@ -1,25 +1,25 @@
 import React, { Component } from 'react';
 import "../App.css";
-import Challenge11 from "./Challenge11";
+import Challenge12 from "./Challenge12";
 import {GoDashboard} from "react-icons/go";
 import SVGgrid from "../images/SVGgrid.png";
 
-class Lesson11 extends Component {
+class Lesson12 extends Component {
 
 
     render() { 
         return ( 
             <div className="mainHolder">
                 <div className="lessonHeader">
-                    <h2 className="lessonTitle">Lesson 11: Introduction to SVG</h2>
+                    <h2 className="lessonTitle">Lesson 12: CSS Grid</h2>
                     <GoDashboard onClick={() => this.props.callback(null)} className="dashIcon"/>
             </div>
             <div className="spacer"></div>
             <div className="lessonBody">
-                <h3 className="sectionHeading">What is SVG?</h3>
-                <p className="flowingText">SVG stands for Scalable Vector Graphics and it is markup language used to descripe two dimensional shapes. It is based off of XML and it's primarily used for graphics and shapes!</p>
+                <h3 className="sectionHeading">What is the CSS grid?</h3>
+                <p className="flowingText">The CSS grid layout system is the latest in a series of CSS layouts, but unlike the other layout systems you will need to plan ahead with regard to how your wider web design is going to fit into the grid as a whole, as opposed to coding each element with stand alone proportions.</p>
                 <p className="flowingText">
-                    in many ways you can compare it to HTML which is another markup language used to mark up text. However SVG is only used to mark up graphics or shapes like circles rectangels and simple and complex curves. Basically, you can use SVG to draw stuff!
+                    with other systems like flexbox, although the elements were either the flex-container (or parent element) or flex-items (child elements), it wasn't as strictly planned in terms of the space, arrangement, and dimensions. For the CSS grid, you layout a grid and then you can place items into it in an order independant fashion.
                 </p>
                 <h3 className="sectionHeading">Is this the only way to draw stuff?</h3>
                     <p className="flowingText">No, there is also the HTML element named &lt;canvas&gt; which is popular for drawing complex animations and drawings. SVG is a little bit more simple and is good for simple drawings and animations. But if you want to do something complicated, you'll want to move to &lt;canvas&gt;.
@@ -37,11 +37,7 @@ class Lesson11 extends Component {
                 <h3 className="sectionHeading">How can we render SVGs?</h3>
                     <p className="flowingText">Since HTML5 came out, most modern browsers will allow you to embed the SVG into the HTML directly in an &lt;object&gt; element an &lt;img&gt; element or an &lt;iframe&gt; element.</p>
                     <p className="flowingText">It is also possible to use JavaScript to dynamically create SVGs that can be rendered by the browser.</p>
-                    <pre className="codeBlock">{`
-<object data="image.svg" type="image/svg+xml" />
-<iframe src="image.svg"></iframe>
-<img src="image.svg"/>          
-                `}</pre>
+                    
                 <h3 className="sectionHeading">How do I make an SVG?</h3>
                     <p className="flowingText">Thought you would never ask! We will cover the different parts and how to build an SVG in good time. But for now, here is an example of a finished SVG:</p>
                     <pre className="codeBlock">{`
@@ -52,7 +48,7 @@ class Lesson11 extends Component {
 </svg>
                 `}</pre>
                     <p className="flowingText">SVG works using a grid coordinate system which starts in the upper left hand corner at coordinates (0,0).</p>
-                    <img alt="SVGgrid" className="graphic" src={SVGgrid}/>
+                    <img alt="SVG grid" className="graphic" src={SVGgrid}/>
                     <p className="flowingText">You can control the parameters of the coordinate system using the viewBox attribute. In the example above, the viewBox attribute dictates that the grid runs from "0, 0" in the top left corner and moves 500 units in both directions to "500, 500" in the bottom right.</p>
                     <p className="flowingText">Remember that when we say that SVGs are scalable, this coordinate system is what will be used to scale it up and down. So that when you draw a line that moves from the coordinates "0, 0" to "0, 1" will be 1 unit long. This technical name for this unit is a "user unit".</p>
                     <p className="flowingText">Along side the viewBox attribute there is also the preserveAspectRatio attribute which helps to prevent the distortion of the image if the aspect ratio of the viewBox doesn't match up with the aspect ratio of the the image depicted in the SVG.
@@ -139,7 +135,7 @@ Text can also be made to follow a path using the textPath element. So many optio
 
                 
 
-<button className="ready" onClick={() => this.props.callback(<Challenge11 callback={this.props.callback}/>)}>Challenge</button>
+<button className="ready" onClick={() => this.props.callback(<Challenge12 callback={this.props.callback}/>)}>Challenge</button>
             </div>
 
             </div>
@@ -147,4 +143,4 @@ Text can also be made to follow a path using the textPath element. So many optio
     }
 }
  
-export default Lesson11;
+export default Lesson12;

@@ -80,7 +80,7 @@ class Lesson10 extends Component {
 };
                 
                 `}</pre>
-<img className="figure" src={gradients}/>
+<img alt="gradients" className="figure" src={gradients}/>
 <p className="flowingText">You can also make the gradients or backgrounds repeat by using the repeating keyword</p>
 <pre className="codeBlock">{`
 .myClass {
