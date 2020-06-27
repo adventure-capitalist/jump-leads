@@ -21,119 +21,107 @@ class Lesson12 extends Component {
                 <p className="flowingText">
                     with other systems like flexbox, although the elements were either the flex-container (or parent element) or flex-items (child elements), it wasn't as strictly planned in terms of the space, arrangement, and dimensions. For the CSS grid, you layout a grid and then you can place items into it in an order independant fashion.
                 </p>
-                <h3 className="sectionHeading">Is this the only way to draw stuff?</h3>
-                    <p className="flowingText">No, there is also the HTML element named &lt;canvas&gt; which is popular for drawing complex animations and drawings. SVG is a little bit more simple and is good for simple drawings and animations. But if you want to do something complicated, you'll want to move to &lt;canvas&gt;.
-                    This lesson is on SVG so we won't be covering the HTML &lt;canvas&gt; but it is worth mentioning at this point just so that you can keep it in the back of your mind for later.</p>
-                <h3 className="sectionHeading">Well what's so good about SVG?</h3>
-                    <p className="flowingText">I thought you would never ask! Here are some benefits:</p>
+                    <p className="flowingText">If you have ever done any sort of quilting, cross-stitch, knitting, or anything similar, you will be familiar with the idea of using a grid to plan a design.</p>
+                    <p className="flowingText">Much like with quilting, you must first decide which sort of grid you want, how many columns, how many rows, is there space between the squares, are all the squares the same size? Or are some of them big and some of them little?</p>
+                    <p  className="flowingText">Although not all the rows and columns or elements have to be uniform in size, the grid lines or seams that determine where the borders of these columns and rows still hypothetically exists even if some elements overlap these lines or take up two rows etc.</p>
+                <h3 className="sectionHeading">What do I need to use CSS grid?</h3>
+                    <p className="flowingText">You must be the kind of person who is able to look at the bigger picture, and who enjoys planning ahead to a reasonable degree.</p>
+                    <p className="flowingText">Additionally, you will need to understand a few semantic elements that will help you to find your way. We will cover the different elements that you need to know now.</p>
                     <ul className="bulletedList">
-                        <li> SVGs are scalable which means they look fab on any size screen with any resolution, as a result, they print really well onto paper media as well!</li>
-                        <li> SVGs are very well supported. Most browsers love them and the few browsers that don't have great fallbacks that are easy to implement.</li>
-                        <li> You can use CSS and JavaScript on SVGs</li>
-                        <li> SVG comes with built in clipping and graphic effects. With a bit of practice it's just as good as if you had PhotoShop available in the browser.</li>
-                        <li> SVGs allow you to dig into each and every element inside of them using the developer tools inside the browser, which makes them super customisable.</li>
-                        <li> It is easy to edit SVGs and there are lots of tools you can use to edit them. </li>
+                        <li> grid-line: a "seam" or line on the grid separating either columns or rows. They can be indexed forwards starting with 1 and they can also be indexed backwards starting with -1.</li>
+                        <li> track: refers to the gap between two adjacent gridlines (most people call these columns or rows).</li>
+                        <li> cell: this is the area where two tracks cross (most people think of this as an individual square) you can position stuff in here.</li>
+                        <li> grid-area: this is where you combine multiple cells and treat them as one container for positioning your content.</li>
                     </ul> 
-                <h3 className="sectionHeading">How can we render SVGs?</h3>
-                    <p className="flowingText">Since HTML5 came out, most modern browsers will allow you to embed the SVG into the HTML directly in an &lt;object&gt; element an &lt;img&gt; element or an &lt;iframe&gt; element.</p>
-                    <p className="flowingText">It is also possible to use JavaScript to dynamically create SVGs that can be rendered by the browser.</p>
-                    
-                <h3 className="sectionHeading">How do I make an SVG?</h3>
-                    <p className="flowingText">Thought you would never ask! We will cover the different parts and how to build an SVG in good time. But for now, here is an example of a finished SVG:</p>
-                    <pre className="codeBlock">{`
-<svg viewBox="0 0 500 500">
-    <rect width="100%" height="100%" fill="red" />
-    <circle cx="150" cy="100" r="80" fill="green" />
-    <text x="150" y="125" font-size="60" text-anchor="middle" fill="white">SVG</text>
-</svg>
-                `}</pre>
-                    <p className="flowingText">SVG works using a grid coordinate system which starts in the upper left hand corner at coordinates (0,0).</p>
-                    <img alt="SVG grid" className="graphic" src={SVGgrid}/>
-                    <p className="flowingText">You can control the parameters of the coordinate system using the viewBox attribute. In the example above, the viewBox attribute dictates that the grid runs from "0, 0" in the top left corner and moves 500 units in both directions to "500, 500" in the bottom right.</p>
-                    <p className="flowingText">Remember that when we say that SVGs are scalable, this coordinate system is what will be used to scale it up and down. So that when you draw a line that moves from the coordinates "0, 0" to "0, 1" will be 1 unit long. This technical name for this unit is a "user unit".</p>
-                    <p className="flowingText">Along side the viewBox attribute there is also the preserveAspectRatio attribute which helps to prevent the distortion of the image if the aspect ratio of the viewBox doesn't match up with the aspect ratio of the the image depicted in the SVG.
-                    This works by scaling the image to either the height or the width and centering it to fit within any extra space.</p>
-                    <pre className="codeBlock">{`
-<svg viewBox="0 0 500 500" preserveAspectRatio="xMidYMidmeet"></svg>     
-                `}</pre>
-                <p className="flowingText">The preserveAspectRatio is set by default to be xMidYMidmeed, but what does this mean? Well the first part, xMidYmid tells the browser to center the scaled viewBox region within the available space in both the x and y directions. You can replace Mid here with both Min or Max to align the graphic flush against one side or the other. 
-                Please bear in mind that SVG is case sensitive though, and quite unusually the camelcasing rules mean that the x is lowercase whereas the Y is uppercase. The secon part of the the preserveAspctRatio property; meet is a part that tells the browser to scale the graphic until it just fits both height and width. It's very similar to background-size: contain; in CSS.
-                Alternatively you could co with "slice" which is more like CSS's background-size cover; (the extra overflow will be sliced off).</p>
-                <h3 className="sectionHeading">Well, what shapes can we draw with SVGs?</h3>
-                    <ul className="bulletedList">
-                        <li>&lt;rect&gt; - rectangles, sometimes with rounded corners</li>
-                        <li>&lt;rect&gt; - circles</li>
-                        <li>&lt;ellipse&gt; - ellipse</li>
-                        <li>&lt;polyline&gt; - a group of connected lines</li>
-                        <li>&lt;polygon&gt; - like a polyline but the connected lines form a shape.</li>
-                        <li>&lt;path&gt; - a complex shape</li>
-                    </ul>
-                    <p className="flowingText">When you are drawing the shapes the lines drawn are called strokes and the colour inside shapes is called the fill. You can set either of the values to none or transparent to cancel them.
-                    When it comes to fill and stroke, you can either target them directly, or you can give the SVG element a class name and target them using CSS properties like this: </p>
+                <h3 className="sectionHeading">How can I plan out my first grid?</h3>
+                    <p className="flowingText">It is more logical than you would think. All that you need to do is define how many columns and rows you want and how big each of them should be.</p>
+                    <p className="flowingText">There are a few methods that you can use to do this:</p>
                     <pre className="codeBlock">{`
 .myClass {
-    fill: currentColor;
-    stroke: #f00;
+    grid-template-columns: 100px 100px 100px; // results in three columns of each 100px wide
+    grid-template-columns: repeat(3, 100px); // also results in three columns each 100px wide
+    grid-template-columns: 50px repeat(3, 100px); // results in one 50px wide column and three 100px wide columns
+
+}
+                `}</pre>
+                    <p className="flowingText"></p>
+                   
+                    <p className="flowingText">The examples above only determine how the columns will be laid out, but the rows work exactly the same.</p>
+                    <pre className="codeBlock">{`
+.myClass {
+    grid-template-rows: 100px 100px 100px; // results in three rows each 100px tall
+    grid-template-rows: repeat(3, 100px); // also results in three rows each 100px tall
+    grid-template-rows: 50px repeat(3, 100px); // results in one 50px tall row and three 100px tall rows
+
+}
+                `}</pre>
+                 <h3 className="sectionHeading">There are special CSS Grid units</h3>
+                    <p className="flowingText">Obviously you can determine the width of columns and rows using pixels, or other CSS measurement units, but there are a few unique things about how size works in the grid.</p>
+                    <ol className="bulletedList">
+                        <li> If you as the developer do not specify a size, the width or height of the cells will be determined by the size of their content.</li>
+                        <li> You can use "auto" much like you might normally do with margin to allow columns to take up more space than their content would dictate if there is extra space available.</li>
+                        <li> If you want to split an area evenly, you can use a grid specific unit: <strong>fr</strong> (divides the remaining area into fractions)</li>
+                        <li> In the name of responsiveness, grid supports a sliding measurement called minmax()</li>
+                        <li> There is "fit-content()" which takes a maximum value as a parameter</li>
+                        <li> On the one hand there is "min-content" which takes the smallest possible width, based on the longest word or element</li>
+                        <li> On the other hand there is "max-content" which takes the widest possible width of a sentence or element</li>
+                    </ol>
+                <p className="flowingText">Interestingly, auto and fr act similarly if they are used in isolation, but if you start mixing and matching fr is more dominant and auto will lose its width.</p>
+                <p className="flowingText">Here are some more examples using these neat measurements:</p>
+                <pre className="codeBlock">{`
+.myClass {
+    grid-template-columns: 200px  minmax(100px, 1fr); // results in one column that is 200px wide and a column that is at least 100px but at most the remaining area split into one fraction
+    grid-template-columns: fit-content(300px) fit-content(400px) 1fr; // results in a column that is maximum 300 pixels wide, a column that is maximum 400 pixels wide and a column that is the remaining area split into one fraction
+}
+                `}</pre>
+                <p className="flowingText">NOTE: You cannot use 1fr as a minimum value for the time being. This is sadly not yet supported.</p>
+                <h3 className="sectionHeading">What if we want to add some space between the rows around the seams?</h3>
+                    <p className="flowingText">No problem you can use any of these:</p>
+                    <ul className="bulletedList">
+                        <li>grid-row-gap - sets a gap between the rows</li>
+                        <li>grid-column-gap - sets a gap between the columns</li>
+                        <li>grid-gap - sets the same value as a gap between both columns and rows</li>
+                    </ul>
+                <h3 className="sectionHeading">Can I give things names?</h3>
+                    <p className="flowingText">Apart from having both a positive and negative index you can also name grid-lines using square brackets like this:</p>
+                    <pre className="codeBlock">{`
+.myClass {
+    grid-template-columns: [page-left] auto [content-left] 1fr [content-right] auto [page-right]
 };
                 `}</pre>
-                    <p className="flowingText">The order that you draw the different elements in is called the injection order or the stacking order. This order is important because the last elements drawn get placed (or stacked) on top of the elements that came before them.</p>
-                    <p className="flowingText">This is like the "bring to front" feature in Microsoft word". In this next part we will give examples of each kind of element and break down how to draw the different shapes.</p>
-                    <h3 className="sectionHeading">Examples of the shapes you can draw:</h3>
+                    <p className="flowingText">You can also name areas. Which is a bit more conceptual but very useful:</p>
                     <pre className="codeBlock">{`
-<rect x="60" y="10" rx="10" ry="10" width="30" height="30"/>  
+.myClass {
+    grid-template-areas: “header header” “sidebar content” “footer footer”;
+};
+                `}</pre>
+                    <p className="flowingText">When you're naming areas, you can use a "." to leave an area blank. It is also worth noting that some of the gridlines in areas will automatically respond to names like "header start" or "header end" </p>
+                <h3 className="sectionHeading">Ok great how do I put stuff in these areas?</h3>
+                <p className="flowingText">Well there are a few options, one option is to use the grid lines to give starting and stopping points for the element: </p>
+                    <pre className="codeBlock">{`
+.myClass {
+    grid-row: 2 / 4; // This element will start on the 2nd horizontal grid line and end on the 4th horizonta grid-line
+    grid-column: 3 / -1; // This element will start on the 3rd vertical end line and end on the last vertical grid-line
+ };
                 `}</pre>
 
-    <p className="flowingText"> in this line,The x stands for the position of the top left corner of the rectangle. The y stands for the position of the top left corner of the rectangle. The width stands for the width of the rectangle. The height stands for the height of the rectangle. The rx stands for the x radius of the corners of the rectangle (this bit is optional). The ry stands for the y radius of the corners of the rectangle (this bit is also optional)</p>
+    <p className="flowingText">Another option is to use the named grid areas to specify where things should go</p>
 <pre className="codeBlock">{`
-<circle cx="60" cy="10" r="10" />
+.myClass {
+    grid-area: sidebar; // this element will stretch to fill the sidebar area.
+ };
                 `}</pre>
-    <p className="flowingText">Here, the cx stands for the x position of the center of the circle, whereas the cy stands for the y position of the center of the circle and the r stands for the  radius of the circle</p>
-    <pre className="codeBlock">{`
-<ellipse cx="60" cy="10" rx="10" ry="10"/>
-                `}</pre>
-    <p className="flowingText">For this shape the cx stands for the x position of the center of the circle, the cy stands for the y position of the center of the circle, rx stands for the x dimension radius of the circle and ry stands for the y dimension radius of the circle.
-</p>
-<pre className="codeBlock">{`
-<line x1="60" y1="10" x2="10" y2="10"/>
-                `}</pre>
-    <p className="flowingText">For lines, x1 stands for the x position of point 1. Meanwhile y1 stands for the y position of point 1. x2 stands for the x position of point 2, whilst y2 The y position of point 2.
-There are also some other parameters like: stroke-width which determines the thickness of the line, stroke-linecap (butt, square, round) which determines how the line is ended, stroke-dasharray which sets the lengths of dashes and gaps(mdn), stroke-dashoffset which determines the offset between dashes (mdn).
-</p>
-<pre className="codeBlock">{`
-<polyline points="60 110, 65 120, 70 115, 75 130, 80 125, 85 140, 90 135, 95 150, 100 145"/>
-                `}</pre>
-    <p className="flowingText"> Polylines are made up of a series of ‘x y’ coordinates (with a space in between) all in a comma-separated list, which the line will join together one after the other.</p>
-    <pre className="codeBlock">{`
-<polygon points="60 110, 65 120, 70 115, 75 130, 80 125, 85 140, 90 135, 95 150, 100 145"/>
-                `}</pre>
-    <p className="flowingText"> Polygons are just like polylines in that they are made up of a series of ‘x y’ coordinates (with a space in between) all in a comma-separated list, which the line will join together one after the other, except the last point will be auto-joined to the first</p>
-    <pre className="codeBlock">{`
-<path d="M 20 230 Q 40 205, 50 230 T 90230"/>
-                `}</pre>
-    <p className="flowingText"> So with paths, d stands for a series of commands to form the shape. </p>
+    <p className="flowingText">It is worth noting that if you have overlapping elements you can use their z-index to control which one is "pushed to front"</p>
+    <h3 className="sectionHeading"> Can I control which part of the cells elements appear in?</h3>
+    <p className="flowingText">Yes of course! This part of CSS grid is basically ripped off from Flexbox. It functions nearly identically. Here are the operators you should know:</p>
     <ul className="bulletedList">
-        <li>M 100,100 means "Pick up the pen and move it to the exact coordinates 100,100"</li>
-        <li>m 100,100 means "Move the Pen 100 down and 100 right from wherever you currently are."</li>
-        <li>L 100,100 means "DRAW a line to the exact coordinates 100,100"</li>
-        <li>l 100,100 means "DRAW a line 100 down and 100 right from wherever you currently are."</li>
-        <li>Z (or z) closes the path</li>
-        <li>And many more… (inc. ARCS!)</li>
-    </ul>
-<pre className="codeBlock">{`
-<text x="20" y="35" class="small">My</text>
-                `}</pre>
-    <p className="flowingText">With text, x  stands for the x coordinate, y stands for the y coordinate, dx stands for the offset from last text element’s x position, while dy is the offset from last text element’s y position.
- The textLength is the target size and lengthAdjust is adjusted after text size. There is also text-anchor (which determines where the text sits horizontally on the line)
-and dominant-baseline (which determines where the text sits vertically on the line)
-Text can also be made to follow a path using the textPath element. So many options!
-</p>
-<h3 className="sectionHeading">Any other random SVG things that we should know?</h3>
-<p className="flowingText">You can put images inside SVGs.</p>
-<p className="flowingText">You can group elements using &lt;g&gt; - it is comparable to how &lt;div&gt; works in HTML.</p>
-<p className="flowingText">There is a &lt;defs&gt; element which is similar to the &lt;head&gt; element in that you cannot see anything inside it in the browser. Everything is off stage. It can be used together with the &lt;use&gt; element to copy elements.</p>   
-<p className="flowingText">There used to be an animated version of SVG, and we have a few hangovers from that including the &lt;animate&gt; tag and the rotate attribute. But you should animate with CSS wherever possible.</p>
-
-                
+        <li>justify-self: start | end | center | stretch; // aligns the content horizontally within the cell</li>
+        <li>align-self: start | end | center | stretch; // aligns the content vertically within the cell</li>
+        <li>justify-content: start | end | center | stretch; // aligns contents horizontally within its borders</li>
+        <li>align-content: start | end | center | stretch; // aligns contents vertically within its borders</li>
+        <li>justify-items: start | end | center | stretch; // aligns all items horizontally within the grid</li>
+        <li>align-items: start | end | center | stretch; // aligns all items vertically within the grid</li>
+    </ul>       
 
 <button className="ready" onClick={() => this.props.callback(<Challenge12 callback={this.props.callback}/>)}>Challenge</button>
             </div>
