@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import {GoDashboard, GoBook} from "react-icons/go";
-import Lesson12 from './Lesson12';
+import Lesson13 from './Lesson13';
 
-class Challenge12 extends Component {
+class Challenge13 extends Component {
 
     state = {  }
 
@@ -10,9 +10,9 @@ class Challenge12 extends Component {
         return ( 
         <div className="mainHolder">
             <div className="lessonHeader">
-                <h2 className="lessonTitle">Lesson 12 CSS Grid</h2>
+                <h2 className="lessonTitle">Lesson 13 CSS Fonts</h2>
                 <div class="icons">
-                <GoBook onClick={() => this.props.callback(<Lesson12 callback={this.props.callback}/>)} className="dashIcon"/>
+                <GoBook onClick={() => this.props.callback(<Lesson13 callback={this.props.callback}/>)} className="dashIcon"/>
                 <GoDashboard onClick={() => this.props.callback(null)} className="dashIcon"/>
                 </div>
             </div>
@@ -26,4 +26,4 @@ class Challenge12 extends Component {
     }
 }
  
-export default Challenge12;
+export default Challenge13;

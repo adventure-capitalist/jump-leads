@@ -72,6 +72,41 @@ class Lesson8 extends Component {
                         <li>vh/vw (viewport height/width): Directly related to a fraction of the size of the screen (also known as a viewport).</li>
                     </ul>
         <p className="flowingText">There are also pre-made responsive CSS grids like bootstrap's grid layout. It is good to know that this kind of ready made solution exists, however, there are clear advantages to understanding the fundamentals of responsiveness too. We will talk more about this in the next lesson.</p>
+        <h3 className="sectionHeading">What about responsive images and image quality?</h3>
+        <p className="flowingText">There can be many different benefits for not rendering large or high quality images for a small screen size. But there are a few similar but distinct ways that you can achieve this.  </p>
+        <p className="flowingText">The first way is to use the &lt;picture&gt; html tag with a series of media queries built into the &lt;source&gt; tags with media and srcset attributes, like this:</p>
+        <pre className="codeBlock">{`
+    <picture>
+      <source media="(max-width: 799px)"
+      srcset="https://picsum.photos/id/237/200/300.jpg">
+      
+      <source media="(min-width: 800px)"
+      srcset="https://picsum.photos/id/238/200/300.jpg">
+      
+      <img src="https://picsum.photos/id/237/200/300.jpg" alt="Thing">
+      
+    </picture>
+`}</pre>
+        <p className="flowingText">Another similar solution involves using the srcset attribute to set media queries for different screen sizes.</p>
+        <pre className="codeBlock">{`
+<img src="cat.jpg" alt="cat" srcset="
+cat_600.jpg 600w,
+cat_960jpg 900w,
+cat_1280.jpg 1280w">
+        `}</pre>
+        <p className="flowingText">This is great but what if my image size and the size of the screen are not the same? What if I want the image to take up only half the width of the screen? Fear not there is also a source attribut that you can use to make this happen.</p>
+        <pre className="codeBlock">{`
+<img src="cat.jpg" alt="cat" srcset="
+cat_600.jpg 600w,
+cat_960jpg 900w,
+cat_1280.jpg 1280w"
+
+sizes="(max-width: 600px) 300px,
+       (max-width: 960px) 500px,
+       800px">
+        `}</pre>
+        <p className="flowingText">Remember that the browser will check the conditions in order! So be mindful to list them in a logical sequence! The final value in the example (800px) is the fallback value which is applied if none of the other conditions are met.</p>
+        <p className="flowingText">Please also remember that not all browsers support the srcset attribute, so you might want to include a src attribute as a fallback just in case.</p>        
                     <button className="ready" onClick={() => this.props.callback(<Challenge8 callback={this.props.callback}/>)}>Challenge</button>
                     
             </div>
