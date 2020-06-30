@@ -96,6 +96,34 @@ class Dashboard extends Component {
                 </ul>
                 <button className="ready" onClick={() => this.clickHandler(<Lesson11 callback={this.challengeCallback}/>)}>Jump In</button>
             </div>
+            <div className="lessonCard">
+            <h2 className="lessonTitle">Lesson 12: CSS Grid</h2>
+                <ul>
+                    <li>What is CSS Grid?</li>
+                    <li>Planning a Grid</li>
+                    <li>Grid Syntax and Terms</li>
+                    <li>Navigating a Grid</li>
+                </ul>
+                <button className="ready" onClick={() => this.clickHandler(<Lesson12 callback={this.challengeCallback}/>)}>Jump In</button>
+            </div>
+            <div className="lessonCard">
+            <h2 className="lessonTitle">Lesson 13: CSS Fonts</h2>
+                <ul>
+                    <li>Importing Fonts</li>
+                    <li>@font-face</li>
+                    <li>Downloading Fonts</li>
+                </ul>
+                <button className="ready" onClick={() => this.clickHandler(<Lesson13 callback={this.challengeCallback}/>)}>Jump In</button>
+            </div>
+            <div className="lessonCard">
+            <h2 className="lessonTitle">Lesson 14: CSS Preprocessors</h2>
+                <ul>
+                    <li>What is preprocessing</li>
+                    <li>What formats are there?</li>
+                    <li>Variables, Mixins, and Nesting</li>
+                </ul>
+                <button className="ready" onClick={() => this.clickHandler(<Lesson14 callback={this.challengeCallback}/>)}>Jump In</button>
+            </div>
         </div>
         }
         {this.state.ready !== null && 
