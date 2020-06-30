@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import "../App.css";
 import Challenge12 from "./Challenge12";
 import {GoDashboard} from "react-icons/go";
-import SVGgrid from "../images/SVGgrid.png";
 
 class Lesson12 extends Component {
 

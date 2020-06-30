@@ -47,7 +47,7 @@ class Lesson13 extends Component {
                         <img className="graphic" alt="direction table" src={fonts} />
                  <h3 className="sectionHeading">How should I pick a font?</h3>
                     <p className="flowingText">There are a wide range of things to consider when picking a font. Here is a video that might helps explain what makes a good font.</p>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/O3fVMm-Ef0Y" frameborder="0" alt="video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/O3fVMm-Ef0Y" frameborder="0" title="video" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <p className="flowingText">Please remember that not all fonts are free, but the paid fonts can be worth it as they often come with excellent customisation options.</p>
                     <p className="flowingText">Note: there is a difference between having the rights to use a font in print, and having the rights to use a font on the web! You have been warned, don't get caught out!</p>
                 <h3 className="sectionHeading">How should fonts be downloaded?</h3>
