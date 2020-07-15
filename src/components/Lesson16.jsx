@@ -53,4 +53,4 @@ class Lesson16 extends Component {
     }
 }
  
-export default Lesson15;
+export default Lesson16;
