@@ -9,6 +9,8 @@ import Lesson11 from "./Lesson11";
 import Lesson12 from "./Lesson12";
 import Lesson13 from "./Lesson13";
 import Lesson14 from "./Lesson14";
+import Lesson15 from "./Lesson15";
+import Lesson16 from "./Lesson16";
 
 class Dashboard extends Component {
     state = { 
@@ -134,7 +136,16 @@ class Dashboard extends Component {
                     <li>What is pseudo code?</li>
                     <li>How do I write good pseudo code?</li>
                 </ul>
-                <button className="ready" onClick={() => this.clickHandler(<Lesson14 callback={this.challengeCallback}/>)}>Jump In</button>
+                <button className="ready" onClick={() => this.clickHandler(<Lesson15 callback={this.challengeCallback}/>)}>Jump In</button>
+            </div>
+            <div className="lessonCard">
+            <h2 className="lessonTitle">Lesson 16: Introduction to JavaScript</h2>
+                <ul>
+                    <li>What is JavaScript?</li>
+                    <li>Why are we learning JavaScript?</li>
+                    <li>How do I write good pseudo code?</li>
+                </ul>
+                <button className="ready" onClick={() => this.clickHandler(<Lesson16 callback={this.challengeCallback}/>)}>Jump In</button>
             </div>
         </div>
         }
