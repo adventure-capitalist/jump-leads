@@ -127,6 +127,15 @@ class Dashboard extends Component {
                 </ul>
                 <button className="ready" onClick={() => this.clickHandler(<Lesson14 callback={this.challengeCallback}/>)}>Jump In</button>
             </div>
+            <div className="lessonCard">
+            <h2 className="lessonTitle">Lesson 15: Introduction to Programming</h2>
+                <ul>
+                    <li>What is programming?</li>
+                    <li>What is pseudo code?</li>
+                    <li>How do I write good pseudo code?</li>
+                </ul>
+                <button className="ready" onClick={() => this.clickHandler(<Lesson14 callback={this.challengeCallback}/>)}>Jump In</button>
+            </div>
         </div>
         }
         {this.state.ready !== null && 
