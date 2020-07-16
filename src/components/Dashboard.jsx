@@ -11,6 +11,7 @@ import Lesson13 from "./Lesson13";
 import Lesson14 from "./Lesson14";
 import Lesson15 from "./Lesson15";
 import Lesson16 from "./Lesson16";
+import Lesson17 from "./Lesson17";
 
 class Dashboard extends Component {
     state = { 
@@ -146,6 +147,15 @@ class Dashboard extends Component {
                     <li>Any relation to Java?</li>
                 </ul>
                 <button className="ready" onClick={() => this.clickHandler(<Lesson16 callback={this.challengeCallback}/>)}>Jump In</button>
+            </div>
+            <div className="lessonCard">
+            <h2 className="lessonTitle">Lesson 17: Datatypes Strings</h2>
+                <ul>
+                    <li>What are Datatypes?</li>
+                    <li>What can I do with strings?</li>
+                    <li>How can I make a string?</li>
+                </ul>
+                <button className="ready" onClick={() => this.clickHandler(<Lesson17 callback={this.challengeCallback}/>)}>Jump In</button>
             </div>
         </div>
         }
