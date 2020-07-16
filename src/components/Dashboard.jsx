@@ -143,7 +143,7 @@ class Dashboard extends Component {
                 <ul>
                     <li>What is JavaScript?</li>
                     <li>Why are we learning JavaScript?</li>
-                    <li>How do I write good pseudo code?</li>
+                    <li>Any relation to Java?</li>
                 </ul>
                 <button className="ready" onClick={() => this.clickHandler(<Lesson16 callback={this.challengeCallback}/>)}>Jump In</button>
             </div>
