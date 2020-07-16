@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import "../App.css";
-import Challenge15 from "./Challenge15";
+import Challenge16 from "./Challenge16";
 import {GoDashboard} from "react-icons/go";
 
 
