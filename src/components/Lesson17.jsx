@@ -49,8 +49,8 @@ class Lesson17 extends Component {
                  <h3>How can I make a string?</h3>
                     <p className="flowingText">A string can be made simply by typing out a string in the literal sense (sometimes called a string literal, pun intended).</p>
                     <p className="flowingText">You can also add strings together. Like "Hello" + "World" to create "Hello World"</p>
-                    <p className="flowingText">An interesting quirk of JavaScript is that if you add for example a number (without quotation marks formated like an integer to a string the result will always be a string. It is "dominant" in that sense.</p>
-                    <p className="flowingText">An example would be: 2 + "5" which will result in "7" and it will never just 7 (which is an integer, more on integers later.)</p>
+                    <p className="flowingText">An interesting quirk of JavaScript is that if you add for example a number (without quotation marks formated like an number to a string the result will always be a string. It is "dominant" in that sense.</p>
+                    <p className="flowingText">An example would be: 2 + "5" which will result in "7" and it will never just 7 (which is a number, more on numbers later.)</p>
 
     
 

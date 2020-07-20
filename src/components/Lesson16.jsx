@@ -11,7 +11,7 @@ class Lesson16 extends Component {
         return ( 
             <div className="mainHolder">
                 <div className="lessonHeader">
-                    <h2 className="lessonTitle">Lesson 15: Introduction to Javascript</h2>
+                    <h2 className="lessonTitle">Lesson 16: Introduction to Javascript</h2>
                     <GoDashboard onClick={() => this.props.callback(null)} className="dashIcon"/>
             </div>
             <div className="spacer"></div>
