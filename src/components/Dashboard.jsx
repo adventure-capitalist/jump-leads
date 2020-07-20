@@ -164,7 +164,7 @@ class Dashboard extends Component {
                     <li>What aren't Numbers?</li>
                     <li>What can I do with Numbers?</li>
                 </ul>
-                <button className="ready" onClick={() => this.clickHandler(<Lesson17 callback={this.challengeCallback}/>)}>Jump In</button>
+                <button className="ready" onClick={() => this.clickHandler(<Lesson18 callback={this.challengeCallback}/>)}>Jump In</button>
             </div>
         </div>
         }
