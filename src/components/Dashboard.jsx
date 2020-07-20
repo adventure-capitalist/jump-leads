@@ -157,6 +157,15 @@ class Dashboard extends Component {
                 </ul>
                 <button className="ready" onClick={() => this.clickHandler(<Lesson17 callback={this.challengeCallback}/>)}>Jump In</button>
             </div>
+            <div className="lessonCard">
+            <h2 className="lessonTitle">Lesson 18: Datatypes Numbers</h2>
+                <ul>
+                    <li>What are Numbers?</li>
+                    <li>What aren't Numbers?</li>
+                    <li>What can I do with Numbers?</li>
+                </ul>
+                <button className="ready" onClick={() => this.clickHandler(<Lesson17 callback={this.challengeCallback}/>)}>Jump In</button>
+            </div>
         </div>
         }
         {this.state.ready !== null && 
