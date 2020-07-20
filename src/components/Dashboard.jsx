@@ -12,6 +12,7 @@ import Lesson14 from "./Lesson14";
 import Lesson15 from "./Lesson15";
 import Lesson16 from "./Lesson16";
 import Lesson17 from "./Lesson17";
+import Lesson18 from "./Lesson18";
 
 class Dashboard extends Component {
     state = { 
