@@ -14,6 +14,7 @@ class Challenge17 extends Component {
                 <div class="icons">
                 <GoBook onClick={() => this.props.callback(<Lesson17 callback={this.props.callback}/>)} className="dashIcon"/>
                 <GoDashboard onClick={() => this.props.callback(null)} className="dashIcon"/>
+                <div className="spacer"></div>
                     <div className="lessonBody">
                         <p>Fork the Code Pen bellow follow the instructions written in the JavaScript column.</p>
                         <p>Here you will see several different strings which need to be edited to escape some of the characters they contain. Best of luck!</p>
