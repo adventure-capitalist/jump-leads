@@ -13,6 +13,7 @@ import Lesson15 from "./Lesson15";
 import Lesson16 from "./Lesson16";
 import Lesson17 from "./Lesson17";
 import Lesson18 from "./Lesson18";
+import Lesson19 from "./Lesson19";
 
 class Dashboard extends Component {
     state = { 
@@ -166,6 +167,15 @@ class Dashboard extends Component {
                     <li>What can I do with Numbers?</li>
                 </ul>
                 <button className="ready" onClick={() => this.clickHandler(<Lesson18 callback={this.challengeCallback}/>)}>Jump In</button>
+            </div>
+            <div className="lessonCard">
+            <h2 className="lessonTitle">Lesson 19: Datatypes Booleans and Empties</h2>
+                <ul>
+                    <li>What are Booleans?</li>
+                    <li>What are the empty data types?</li>
+                    <li>How can I figure out the type of some data?</li>
+                </ul>
+                <button className="ready" onClick={() => this.clickHandler(<Lesson19 callback={this.challengeCallback}/>)}>Jump In</button>
             </div>
         </div>
         }

@@ -34,7 +34,19 @@ class Lesson19 extends Component {
                             <li> undefined - this is the default value if something has no value.</li>
                             <li> void - can be used to ensure that something will retun undefined, but honestly it is not needed just know that it exists.</li>
                             <li> Empty slot - related to leaving empty values in arrays, which is a data type we will touch on later, but this one isn't needed either. Just remember that it's out there.</li>
-                    </ul> 
+                    </ul>
+                <h3>How can you tell the type of something?</h3>
+                    <p className="flowingText">There is actually a built in operator that if you have a bit of information or data saved, and you need to know the type you can use it to determine the type.</p>
+                    <pre className="codeBlock">{`
+let myBitOfData = 365;
+
+typeof myBitOfData; // expected result: Number
+
+
+let myOtherBitOfData = true;
+
+typeof myOtherBitOfData; // expected result: Boolean
+                `}</pre>
                 <button className="ready" onClick={() => this.props.callback(<Challenge19 callback={this.props.callback}/>)}>Challenge</button>
             </div>
 
