@@ -14,6 +14,7 @@ class Challenge16 extends Component {
                 <div class="icons">
                 <GoBook onClick={() => this.props.callback(<Lesson16 callback={this.props.callback}/>)} className="dashIcon"/>
                 <GoDashboard onClick={() => this.props.callback(null)} className="dashIcon"/>
+                </div>
                 <div className="lessonBody">
                         <p>Welcome to Installfest!</p>
                         <p>Now, depending on whether you are running Mac or Windows or even Linux, the stuff you need to install will be slightly different but it will result in the same outcome. So don't feel like you are missing out!</p>
@@ -22,7 +23,6 @@ class Challenge16 extends Component {
                         <p>Now the gang is back together again, Mac and Windows people unite and please install Node.js <a href="https://nodejs.org/en/download/">here</a> node will allow you to install other packages in the terminal later on in the course.</p>
                     </div>
                 </div>
-            </div>
         
         </div> 
         );

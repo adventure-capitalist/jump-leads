@@ -14,6 +14,7 @@ import Lesson16 from "./Lesson16";
 import Lesson17 from "./Lesson17";
 import Lesson18 from "./Lesson18";
 import Lesson19 from "./Lesson19";
+import Lesson20 from "./Lesson20";
 
 class Dashboard extends Component {
     state = { 
@@ -174,6 +175,16 @@ class Dashboard extends Component {
                     <li>What are Booleans?</li>
                     <li>What are the empty data types?</li>
                     <li>How can I figure out the type of some data?</li>
+                </ul>
+                <button className="ready" onClick={() => this.clickHandler(<Lesson19 callback={this.challengeCallback}/>)}>Jump In</button>
+            </div>
+            <div className="lessonCard">
+            <h2 className="lessonTitle">Lesson 20: Variables</h2>
+                <ul>
+                    <li>What are Variables?</li>
+                    <li>How to make good variable names</li>
+                    <li>JavaScript variables and syntax</li>
+                    <li>The three types of variables</li>
                 </ul>
                 <button className="ready" onClick={() => this.clickHandler(<Lesson19 callback={this.challengeCallback}/>)}>Jump In</button>
             </div>

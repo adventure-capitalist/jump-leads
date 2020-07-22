@@ -14,6 +14,7 @@ class Challenge17 extends Component {
                 <div class="icons">
                 <GoBook onClick={() => this.props.callback(<Lesson17 callback={this.props.callback}/>)} className="dashIcon"/>
                 <GoDashboard onClick={() => this.props.callback(null)} className="dashIcon"/>
+                </div>
                 <div className="spacer"></div>
                     <div className="lessonBody">
                         <p>Fork the Code Pen bellow follow the instructions written in the JavaScript column.</p>
@@ -23,7 +24,6 @@ class Challenge17 extends Component {
                             <span>See the Pen <a href="https://codepen.io/ashleylaurel/pen/GRoYBor">Brown Paper Packages Tied up with String</a></span>
                         </p>
                     </div>
-                </div>
             </div>
         
         </div> 

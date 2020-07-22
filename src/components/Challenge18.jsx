@@ -14,6 +14,7 @@ class Challenge18 extends Component {
                 <div class="icons">
                 <GoBook onClick={() => this.props.callback(<Lesson18 callback={this.props.callback}/>)} className="dashIcon"/>
                 <GoDashboard onClick={() => this.props.callback(null)} className="dashIcon"/>
+            </div>
                 <div className="spacer"></div>
                     <div className="lessonBody">
                         <p>Fork the Code Pen bellow follow the instructions written in the JavaScript column.</p>
@@ -24,7 +25,7 @@ class Challenge18 extends Component {
                         </p>
                     </div>
                 </div>
-            </div>
+            
         
         </div> 
         );
