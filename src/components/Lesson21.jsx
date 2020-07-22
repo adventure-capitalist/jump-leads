@@ -22,7 +22,7 @@ class Lesson21 extends Component {
                 <h3 className="sectionHeading">How do you write an object?</h3>
                     <p className="flowingText">There are a few interesting symantic things that you should bear in mind when writing an object, and they are as follows:</p>
                     <ul className="bulletedList">
-                            <li> {{}} - an object is wrapped inside a pair of curly braces.</li>
+                            <li> {'{}'} - an object is wrapped inside a pair of curly braces.</li>
                             <li> : - each key and the corresponding value should be seperated with a semi-colon.</li>
                             <li> , - each key value pair should be separated from the next with a comma.</li>
                     </ul>
@@ -97,8 +97,8 @@ myFirstObject.favoriteColor = "blue";
             <p className="flowingText">It is important to note that all these changes are not tracked, so the program will not store when things are added or removed and what these additions are. It only stores the current collection of data. </p>
                 <button className="ready" onClick={() => this.props.callback(<Challenge21 callback={this.props.callback}/>)}>Challenge</button>
             </div>
-            </div>
-         );     
+        </div>
+     );     
     }
 }
  
