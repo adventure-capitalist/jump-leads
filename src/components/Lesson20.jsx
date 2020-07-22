@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import "../App.css";
 import Challenge20 from "./Challenge20";
 import {GoDashboard} from "react-icons/go";
-import wait from "../images/WaitTheresMore.jpg";
 
 class Lesson20 extends Component {
 
