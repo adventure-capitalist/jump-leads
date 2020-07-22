@@ -10,7 +10,7 @@ class Lesson20 extends Component {
         return ( 
             <div className="mainHolder">
                 <div className="lessonHeader">
-                    <h2 className="lessonTitle">Lesson 19: Writing in JavaScript</h2>
+                    <h2 className="lessonTitle">Lesson 20: Writing in JavaScript</h2>
                     <GoDashboard onClick={() => this.props.callback(null)} className="dashIcon"/>
                 </div>
             <div className="spacer"></div>

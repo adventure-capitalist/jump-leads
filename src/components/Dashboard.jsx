@@ -15,6 +15,7 @@ import Lesson17 from "./Lesson17";
 import Lesson18 from "./Lesson18";
 import Lesson19 from "./Lesson19";
 import Lesson20 from "./Lesson20";
+import Lesson21 from "./Lesson21";
 
 class Dashboard extends Component {
     state = { 
@@ -187,6 +188,16 @@ class Dashboard extends Component {
                     <li>The three types of variables</li>
                 </ul>
                 <button className="ready" onClick={() => this.clickHandler(<Lesson20 callback={this.challengeCallback}/>)}>Jump In</button>
+            </div>
+            <div className="lessonCard">
+            <h2 className="lessonTitle">Lesson 21: Objects</h2>
+                <ul>
+                    <li>What is an object?</li>
+                    <li>How to create an object</li>
+                    <li>Accessing information in objects</li>
+                    <li>Modifying objects</li>
+                </ul>
+                <button className="ready" onClick={() => this.clickHandler(<Lesson21 callback={this.challengeCallback}/>)}>Jump In</button>
             </div>
         </div>
         }
