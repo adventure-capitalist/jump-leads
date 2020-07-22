@@ -12,8 +12,8 @@ class Challenge15 extends Component {
             <div className="lessonHeader">
                 <h2 className="lessonTitle">Lesson 15:  Introduction to Programming</h2>
                 <div class="icons">
-                <GoBook onClick={() => this.props.callback(<Lesson15 callback={this.props.callback}/>)} className="dashIcon"/>
-                <GoDashboard onClick={() => this.props.callback(null)} className="dashIcon"/>
+                    <GoBook onClick={() => this.props.callback(<Lesson15 callback={this.props.callback}/>)} className="dashIcon"/>
+                    <GoDashboard onClick={() => this.props.callback(null)} className="dashIcon"/>
                 </div>
             </div>
             <div className="spacer"></div>

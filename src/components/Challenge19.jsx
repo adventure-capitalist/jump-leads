@@ -12,8 +12,9 @@ class Challenge19 extends Component {
             <div className="lessonHeader">
                 <h2 className="lessonTitle">Lesson 19: Booleans and Empty Data Types</h2>
                 <div class="icons">
-                <GoBook onClick={() => this.props.callback(<Lesson19 callback={this.props.callback}/>)} className="dashIcon"/>
-                <GoDashboard onClick={() => this.props.callback(null)} className="dashIcon"/>
+                    <GoBook onClick={() => this.props.callback(<Lesson19 callback={this.props.callback}/>)} className="dashIcon"/>
+                    <GoDashboard onClick={() => this.props.callback(null)} className="dashIcon"/>
+                </div>
             </div>
                 <div className="spacer"></div>
                     <div className="lessonBody">
@@ -23,7 +24,6 @@ class Challenge19 extends Component {
                             <span>See the Pen <a href="https://codepen.io/ashleylaurel/pen/YzwBybw">Is it truly empty?</a></span>
                         </p>
                     </div>
-                </div>
         
         </div> 
         );
