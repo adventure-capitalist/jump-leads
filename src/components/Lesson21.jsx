@@ -47,7 +47,7 @@ let mySecondObject = {
                 `}</pre>
 
                     
-                <h3>How to access information stored in objects</h3>
+                <h3>What can you do with Arrays?</h3>
                     <p className="flowingText">There are two ways to extract and isolate certain pieces of information from the collection.</p>
                     <p className="flowingText">The first way is called "dot syntax" and the second way is called "square bracket syntax".</p>
                     <p className="flowingText">It's best if we explore both of these while looking at a real life example of an object so let's consider this object:</p>

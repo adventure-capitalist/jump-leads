@@ -10,7 +10,7 @@ class Challenge21 extends Component {
         return ( 
         <div className="mainHolder">
             <div className="lessonHeader">
-                <h2 className="lessonTitle">Lesson 21: Variables</h2>
+                <h2 className="lessonTitle">Lesson 21: Objects</h2>
                 <div class="icons">
                     <GoBook onClick={() => this.props.callback(<Lesson21 callback={this.props.callback}/>)} className="dashIcon"/>
                     <GoDashboard onClick={() => this.props.callback(null)} className="dashIcon"/>
