@@ -186,7 +186,7 @@ class Dashboard extends Component {
                     <li>JavaScript variables and syntax</li>
                     <li>The three types of variables</li>
                 </ul>
-                <button className="ready" onClick={() => this.clickHandler(<Lesson19 callback={this.challengeCallback}/>)}>Jump In</button>
+                <button className="ready" onClick={() => this.clickHandler(<Lesson20 callback={this.challengeCallback}/>)}>Jump In</button>
             </div>
         </div>
         }
