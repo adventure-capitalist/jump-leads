@@ -191,7 +191,7 @@ class Dashboard extends Component {
                 <button className="ready" onClick={() => this.clickHandler(<Lesson20 callback={this.challengeCallback}/>)}>Jump In</button>
             </div>
             <div className="lessonCard">
-            <h2 className="lessonTitle">Lesson 21: Objects</h2>
+            <h2 className="lessonTitle">Lesson 21: Datatypes Objects</h2>
                 <ul>
                     <li>What is an object?</li>
                     <li>How to create an object</li>
@@ -201,7 +201,7 @@ class Dashboard extends Component {
                 <button className="ready" onClick={() => this.clickHandler(<Lesson21 callback={this.challengeCallback}/>)}>Jump In</button>
             </div>
             <div className="lessonCard">
-            <h2 className="lessonTitle">Lesson 22: Arrays</h2>
+            <h2 className="lessonTitle">Lesson 22: Datatypes Arrays</h2>
                 <ul>
                     <li>What is an array?</li>
                     <li>How to create an array</li>

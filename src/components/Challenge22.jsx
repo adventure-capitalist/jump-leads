@@ -10,7 +10,7 @@ class Challenge22 extends Component {
         return ( 
         <div className="mainHolder">
             <div className="lessonHeader">
-                <h2 className="lessonTitle">Lesson 22: Arrays</h2>
+                <h2 className="lessonTitle">Lesson 22: Data Types Arrays</h2>
                 <div class="icons">
                     <GoBook onClick={() => this.props.callback(<Lesson22 callback={this.props.callback}/>)} className="dashIcon"/>
                     <GoDashboard onClick={() => this.props.callback(null)} className="dashIcon"/>
