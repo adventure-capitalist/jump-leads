@@ -206,6 +206,7 @@ class Dashboard extends Component {
                     <li>What is an array?</li>
                     <li>How to create an array</li>
                     <li>Accessing information in arrays</li>
+                    <li>Array Methods</li>
                 </ul>
                 <button className="ready" onClick={() => this.clickHandler(<Lesson22 callback={this.challengeCallback}/>)}>Jump In</button>
             </div>

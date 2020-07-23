@@ -74,7 +74,7 @@ myFirstArray.push("Hermes") // expected result: ["Rudolph", "Dancer", "Prancer",
 myFirstArray.push("Skipper") // expected result: ["Skipper", "Rudolph", "Dancer", "Prancer", "Vixen", "Comet", "Cupid", "Donner", "Blitzen", "Hermes"]
                 `}</pre>
             <p className="flowingText">It is important to note that all these changes are not tracked, so the program will not store when things are added or removed and what these additions are. It only stores the current collection of data. </p>
-                <button className="ready" onClick={() => this.props.callback(<Challenge22 callback={this.props.callback}/>)}>Challenge</button>
+                
             <h3>How to remove/return information from Arrays</h3>
             <p className="flowingText">It is also possible to simultaneously remove and return elements of an array from both the start and from the end. </p>
             <p className="flowingText">To remove the last item from the end:</p>
@@ -120,6 +120,7 @@ let copy = myFirstArray.slice(0, 2) // expected result: ["Skipper", "Rudolph" ] 
                             <li> .map() - creates a new array based off of the old array except all the items have been manipulated in the same way.</li>
                     </ul>
                 <p className="flowingText">You can read more about all of the array methods <a href="https://www.tutorialrepublic.com/javascript-reference/javascript-array-object.php">here</a></p>
+                <button className="ready" onClick={() => this.props.callback(<Challenge22 callback={this.props.callback}/>)}>Challenge</button>
             </div>
         </div>
      );     
