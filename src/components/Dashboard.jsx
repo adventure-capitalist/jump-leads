@@ -17,6 +17,7 @@ import Lesson19 from "./Lesson19";
 import Lesson20 from "./Lesson20";
 import Lesson21 from "./Lesson21";
 import Lesson22 from "./Lesson22";
+import Lesson23 from "./Lesson23";
 
 class Dashboard extends Component {
     state = { 
@@ -209,6 +210,16 @@ class Dashboard extends Component {
                     <li>Array Methods</li>
                 </ul>
                 <button className="ready" onClick={() => this.clickHandler(<Lesson22 callback={this.challengeCallback}/>)}>Jump In</button>
+            </div>
+            <div className="lessonCard">
+            <h2 className="lessonTitle">Lesson 23: Introduction to Operators</h2>
+                <ul>
+                    <li>What are operators?</li>
+                    <li>Assignment operators</li>
+                    <li>Comparison operators</li>
+                    <li>Logical operators</li>
+                </ul>
+                <button className="ready" onClick={() => this.clickHandler(<Lesson23 callback={this.challengeCallback}/>)}>Jump In</button>
             </div>
         </div>
         }

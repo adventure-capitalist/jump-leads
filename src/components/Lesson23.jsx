@@ -39,6 +39,7 @@ class Lesson23 extends Component {
                             <li> % : returns only the remainder of a division does not change the original values</li>
                             <li> Math.floor() : returns everything from a division apart from the remainder. (rounds down to the nearest whole number)</li>
                     </ul>
+                    <h3 className="sectionHeading">Assignment Operators</h3>
                     <p className="flowingText">None of these operators will have any effect on the original value of a variable that was previously declared unless you  use an assignment opperator to assign them a new value in the memory.</p>
                     <p className="flowingText">There are a few different assignment opperators that you can use in different situations. They are as follows:</p>
                     <ul className="bulletedList">
@@ -51,7 +52,7 @@ class Lesson23 extends Component {
                         <li> x **- y : is short for x - x ** y (remember exponents?)</li>
                     </ul>
                     <p className="flowingText">It is always the first variable named on the left that is being reassigned a value in the memory.</p>
-                   
+            <h3 className="sectionHeading">Comparison Operators</h3>
             <p className="flowingText">There are also operators for if you would like to compare different values to each other, all of these return either true, or false and they are as follows:</p>
                 <ul className="bulletedList">
                         <li> == : equality comparison, checks if equal</li>
@@ -62,7 +63,8 @@ class Lesson23 extends Component {
                         <li> &lt;= : less than or equal to</li>
                         <li> &gt; : greater than</li>
                         <li> &gt;= : greater than or equal to</li>
-                    </ul> 
+                    </ul>
+            <h3 className="sectionHeading">Logical Operators</h3>
             <p className="flowingText">Additionally, there are also a few logical operators that you will see all the time in JavaScript. These are as follows:</p>
             <ul className="bulletedList">
                 <li>&amp;&amp; : "and", both conditions must be true to result in a response of true(age &gt; 16 &amp;&amp; height &gt; 160) </li>
