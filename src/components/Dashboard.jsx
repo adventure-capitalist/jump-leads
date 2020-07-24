@@ -18,6 +18,7 @@ import Lesson20 from "./Lesson20";
 import Lesson21 from "./Lesson21";
 import Lesson22 from "./Lesson22";
 import Lesson23 from "./Lesson23";
+import Lesson24 from "./Lesson24";
 
 class Dashboard extends Component {
     state = { 
@@ -218,6 +219,16 @@ class Dashboard extends Component {
                     <li>Assignment operators</li>
                     <li>Comparison operators</li>
                     <li>Logical operators</li>
+                </ul>
+                <button className="ready" onClick={() => this.clickHandler(<Lesson23 callback={this.challengeCallback}/>)}>Jump In</button>
+            </div>
+            <div className="lessonCard">
+            <h2 className="lessonTitle">Lesson 24: Introduction to Functions</h2>
+                <ul>
+                    <li>What are functions?</li>
+                    <li>How are functions writen?</li>
+                    <li>Referencing functions</li>
+                    <li>Running functions</li>
                 </ul>
                 <button className="ready" onClick={() => this.clickHandler(<Lesson23 callback={this.challengeCallback}/>)}>Jump In</button>
             </div>
