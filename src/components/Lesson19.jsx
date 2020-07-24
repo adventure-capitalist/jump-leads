@@ -47,6 +47,16 @@ let myOtherBitOfData = true;
 
 typeof myOtherBitOfData; // expected result: Boolean
                 `}</pre>
+                <p className="flowingText">In JavaScript, if you are checking whether or not something is true or false, the following values will always evaluate to be false:</p>
+                <ul className="bulletedList">
+                    <li>false</li>
+                    <li>0</li>
+                    <li>"" and '' and `` (an empty string with no spaces)</li>
+                    <li>null</li>
+                    <li>undefined</li>
+                    <li>NaN</li>
+                </ul>
+                <p className="flowingText">Everything else will evaluate to be true!</p>
                 <button className="ready" onClick={() => this.props.callback(<Challenge19 callback={this.props.callback}/>)}>Challenge</button>
             </div>
 
