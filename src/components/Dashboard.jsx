@@ -230,7 +230,7 @@ class Dashboard extends Component {
                     <li>Referencing functions</li>
                     <li>Running functions</li>
                 </ul>
-                <button className="ready" onClick={() => this.clickHandler(<Lesson23 callback={this.challengeCallback}/>)}>Jump In</button>
+                <button className="ready" onClick={() => this.clickHandler(<Lesson24 callback={this.challengeCallback}/>)}>Jump In</button>
             </div>
         </div>
         }
