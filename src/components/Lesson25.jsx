@@ -11,7 +11,7 @@ class Lesson25 extends Component {
         return ( 
             <div className="mainHolder">
                 <div className="lessonHeader">
-                    <h2 className="lessonTitle">Lesson 25: Conditionals, Loops and More</h2>
+                    <h2 className="lessonTitle">Lesson 25: Conditionals, Loops, and Timers</h2>
                     <GoDashboard onClick={() => this.props.callback(null)} className="dashIcon"/>
                 </div>
             <div className="spacer"></div>

@@ -19,6 +19,7 @@ import Lesson21 from "./Lesson21";
 import Lesson22 from "./Lesson22";
 import Lesson23 from "./Lesson23";
 import Lesson24 from "./Lesson24";
+import Lesson25 from "./Lesson25";
 
 class Dashboard extends Component {
     state = { 
@@ -231,6 +232,15 @@ class Dashboard extends Component {
                     <li>Running functions</li>
                 </ul>
                 <button className="ready" onClick={() => this.clickHandler(<Lesson24 callback={this.challengeCallback}/>)}>Jump In</button>
+            </div>
+            <div className="lessonCard">
+            <h2 className="lessonTitle">Lesson 25: Conditionals, Loops, and Timers</h2>
+                <ul>
+                    <li>What are Conditionals?</li>
+                    <li>What are Loops?</li>
+                    <li>What are Timers?</li>
+                </ul>
+                <button className="ready" onClick={() => this.clickHandler(<Lesson25 callback={this.challengeCallback}/>)}>Jump In</button>
             </div>
         </div>
         }
