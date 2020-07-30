@@ -12,6 +12,7 @@ class Lesson25 extends Component {
             <div className="mainHolder">
                 <div className="lessonHeader">
                     <h2 className="lessonTitle">Lesson 25: Conditionals, Loops, and Timers</h2>
+                    {/* TLC? Timers Loops and Conditionals? */}
                     <GoDashboard onClick={() => this.props.callback(null)} className="dashIcon"/>
                 </div>
             <div className="spacer"></div>
@@ -29,7 +30,7 @@ if(name = "Peter Piper") {
                     <p className="flowingText">These if/else statements are a bit like those choose your own adventure books where you go to page 18 to open the spooky cellar door and go to page 35 to get the heck out of the haunted house. Now if you are not a peeker.... you go straight to the page that matches your decision and you do not look at the other possibilities. The same thing is true for conditionals. The computer checks all of the conditions, decides which one is true, then it goes straight to reading the code in that scenario. It does not pass go. It does not peek into the other scenarios. Computers aren't peekers.</p>
                     <p className="flowingText">But the crucial similarity is that you can still have a blender even if you don't know what ingredients you're going to blend yet. This means that you can use the blender for lots of things and just give it different ingredients.</p>
                     <p className="flowingText">If this analogy isn't helpful you can also think of them as a multilayered bulleted list.</p>
-                <img href={revolutionary} alt="bulleted list"/>
+                <img alt="wait theres more" className="figure" src={revolutionary}/>
                     <p className="flowingText">With a multi-level list, although humans tend to read it from the top of the page to the bottom of the page, the computer will always read from the top level of the bullet points in. So let's presume that the computer was deciding which of the things on the list to do next. It would go through the top level and check if things has already been finished, and the first task that it found to be unfinished it would dig deeper into. However, if a task was not incomplete at the top most level it wouldn't bother to dig deeper into the lower levels. They just aren't relevant for the computer given the current scenario.</p>
                     <p className="flowingText">You can keep using the same functions each time give it different things to work with, and the results will vary depending on what you put in.</p>
                     <p className="flowingText">It is possible for there to be multiple scenarios to check if they are true. Here is an example with many possible scenarios.</p>

@@ -20,6 +20,7 @@ import Lesson22 from "./Lesson22";
 import Lesson23 from "./Lesson23";
 import Lesson24 from "./Lesson24";
 import Lesson25 from "./Lesson25";
+import Lesson26 from "./Lesson26";
 
 class Dashboard extends Component {
     state = { 
@@ -241,6 +242,15 @@ class Dashboard extends Component {
                     <li>What are Timers?</li>
                 </ul>
                 <button className="ready" onClick={() => this.clickHandler(<Lesson25 callback={this.challengeCallback}/>)}>Jump In</button>
+            </div>
+            <div className="lessonCard">
+            <h2 className="lessonTitle">Lesson 26: Regular Expressions</h2>
+                <ul>
+                    <li>Introduction to Regular Expressions</li>
+                    <li>Meta Characters</li>
+                    <li>What can regex do?</li>
+                </ul>
+                <button className="ready" onClick={() => this.clickHandler(<Lesson26 callback={this.challengeCallback}/>)}>Jump In</button>
             </div>
         </div>
         }
