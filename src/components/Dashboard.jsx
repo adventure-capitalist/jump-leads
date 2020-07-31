@@ -21,6 +21,7 @@ import Lesson23 from "./Lesson23";
 import Lesson24 from "./Lesson24";
 import Lesson25 from "./Lesson25";
 import Lesson26 from "./Lesson26";
+import Lesson27 from "./Lesson27";
 
 class Dashboard extends Component {
     state = { 
@@ -251,6 +252,15 @@ class Dashboard extends Component {
                     <li>What can regex do?</li>
                 </ul>
                 <button className="ready" onClick={() => this.clickHandler(<Lesson26 callback={this.challengeCallback}/>)}>Jump In</button>
+            </div>
+            <div className="lessonCard">
+            <h2 className="lessonTitle">Lesson 27: JavaScript and Dates</h2>
+                <ul>
+                    <li>Kinds of Dates</li>
+                    <li>Formatting Dates</li>
+                    <li>Libraries used for dates</li>
+                </ul>
+                <button className="ready" onClick={() => this.clickHandler(<Lesson27 callback={this.challengeCallback}/>)}>Jump In</button>
             </div>
         </div>
         }
