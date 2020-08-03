@@ -18,7 +18,7 @@ class Challenge27 extends Component {
             </div>
                 <div className="spacer"></div>
                     <div className="lessonBody">
-                        <p>Try to think of five significant dates in your life, the first of which should probably be the day you were born, and go ahead and try and create variables and set them to contain each of these dates.</p>
+                        <p>Try to think of five significant dates (extra credit if you include times) in your life, the first of which should probably be the day you were born, and go ahead and try and create variables and set them to contain each of these dates.</p>
                     </div>
         </div> 
         );

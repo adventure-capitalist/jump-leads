@@ -22,6 +22,7 @@ import Lesson24 from "./Lesson24";
 import Lesson25 from "./Lesson25";
 import Lesson26 from "./Lesson26";
 import Lesson27 from "./Lesson27";
+import Lesson28 from "./Lesson28";
 
 class Dashboard extends Component {
     state = { 
@@ -254,13 +255,24 @@ class Dashboard extends Component {
                 <button className="ready" onClick={() => this.clickHandler(<Lesson26 callback={this.challengeCallback}/>)}>Jump In</button>
             </div>
             <div className="lessonCard">
-            <h2 className="lessonTitle">Lesson 27: JavaScript and Dates</h2>
+            <h2 className="lessonTitle">Lesson 27: Dates</h2>
                 <ul>
-                    <li>Kinds of Dates</li>
-                    <li>Formatting Dates</li>
-                    <li>Libraries used for dates</li>
+                    <li>Types of Dates</li>
+                    <li>The Date Object</li>
+                    <li>Date Formatting</li>
+                    <li>Moment JS</li>
                 </ul>
                 <button className="ready" onClick={() => this.clickHandler(<Lesson27 callback={this.challengeCallback}/>)}>Jump In</button>
+            </div>
+            <div className="lessonCard">
+            <h2 className="lessonTitle">Lesson 28: Advanced Functions</h2>
+                <ul>
+                    <li>How do functions work?</li>
+                    <li>Try/Catch and Async/Await</li>
+                    <li>Scope and Context</li>
+                    <li>Constructor Functions</li>
+                </ul>
+                <button className="ready" onClick={() => this.clickHandler(<Lesson28 callback={this.challengeCallback}/>)}>Jump In</button>
             </div>
         </div>
         }
