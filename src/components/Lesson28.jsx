@@ -60,7 +60,7 @@ The finally block lets you to execute some code irrespective of whether or not a
                     <pre className="codeBlock">{`
 async function getUserAsync(name) 
 {
-  let response = await fetch('https://api.github.com/users/$\{{name}');     // this is a request that will fetch a users github username.
+  let response = await fetch('https://api.github.com/users/$\{name}');     // this is a request that will fetch a users github username.
   let data = await response.json()      // this will turn the response from the previous line into JSON (JavaScript Object Notation) format.
   return data;
 }

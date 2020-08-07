@@ -23,6 +23,7 @@ import Lesson25 from "./Lesson25";
 import Lesson26 from "./Lesson26";
 import Lesson27 from "./Lesson27";
 import Lesson28 from "./Lesson28";
+import Lesson29 from "./Lesson29";
 
 class Dashboard extends Component {
     state = { 
@@ -273,6 +274,16 @@ class Dashboard extends Component {
                     <li>Constructor Functions</li>
                 </ul>
                 <button className="ready" onClick={() => this.clickHandler(<Lesson28 callback={this.challengeCallback}/>)}>Jump In</button>
+            </div>
+            <div className="lessonCard">
+            <h2 className="lessonTitle">Lesson 29: Introduction to ES6</h2>
+                <ul>
+                    <li>Fat Arrow Functions</li>
+                    <li>Destructuring</li>
+                    <li>Template literals</li>
+                    <li>Spread and rest operators</li>
+                </ul>
+                <button className="ready" onClick={() => this.clickHandler(<Lesson29 callback={this.challengeCallback}/>)}>Jump In</button>
             </div>
         </div>
         }
