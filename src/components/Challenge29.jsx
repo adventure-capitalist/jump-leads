@@ -23,6 +23,7 @@ class Challenge24 extends Component {
                         <p className="codepen" data-height="309" data-theme-id="light" data-default-tab="css,result" data-user="ashleylaurel" data-slug-hash="rNxVzxY" style={{height: "309px", boxSizing: "border-box", display: "flex", alignItems: "center", justifyContent: "center", border: "2px solid", margin: "1em 0", padding: "1em"}} data-pen-title="JavaScript SalES6irls">
                             <span>See the Pen <a href="https://codepen.io/ashleylaurel/pen/mdPyBXg?editors=1111">JavaScript SalES6irls</a></span>
                         </p>
+
                     </div>
         
         </div> 

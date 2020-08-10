@@ -277,7 +277,7 @@ console.log(arr4) // expected result: [0, 1, 2, 'some other value I added in the
                 <p className="flowingText">In the above example, you can see that the same ellipsis is working to spread the inner values of each variable into the new variables.</p>
     <h4>for/of loop</h4>
         <p className="flowingText">The new for/of loop is designed to loop over anything that is iterable, or can be gone through one by one. The exception is if you have an object (which is technically iterable), here you shouldn't use the for/of loop, but rather the for/in loop.</p>
-        <p className="flowingText">The for/in loop is particularly useful if someone has added in a method to an object, so that that method can also be included in the iterations. Let's look at another example:</p>
+        <p className="flowingText">The for/of loop is particularly useful if someone has added in a method to an object, so that that method can also be included in the iterations. Let's look at another example:</p>
         <pre className="codeBlock">{`
 const pets = ['cat', 'dog', 'rabbit'];
 
@@ -291,7 +291,7 @@ for (const [index, pet] of pets.entries()) {
     console.log(index, pet); // expected result: 0, 'cat', 1, 'dog', 2,  'rabbit'
 }
                 `}</pre>
-        <p className="flowingText">As you can see from this example, with the for/in loop the syntax involves creating a constant that represents one unit of the entire iterable item. It is worth noting that you can still use the continue and break keywords that we discussed earlier when we covered the other types of loops.</p>
+        <p className="flowingText">As you can see from this example, with the for/of loop the syntax involves creating a constant that represents one unit of the entire iterable item. It is worth noting that you can still use the continue and break keywords that we discussed earlier when we covered the other types of loops.</p>
     <h4>Promises</h4>
         <p className="flowingText">We will talk more in-depth about promises in the lesson dedicated to AJAX. Promises allow Javascript to wait for a result. This waiting behavior is described as asynchronous.</p>
     <h4>Async/Await</h4>
@@ -417,6 +417,7 @@ var ws = new WeakSet();
         <pre className="codeBlock">{`
 var ws = new WeakMap();
                 `}</pre>
+                <button className="ready" onClick={() => this.props.callback(<Challenge29 callback={this.props.callback}/>)}>Challenge</button>
         </div>
     </div>
          );     

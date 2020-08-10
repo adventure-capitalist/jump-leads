@@ -16,11 +16,11 @@ class Lesson22 extends Component {
             <div className="spacer"></div>
             <div className="lessonBody">
                 <h3 className="sectionHeading">What are Arrays?</h3>
-                    <p className="flowingText">Under the hood, arrays are just objects with numbers for keys. They can be used to group or list bits of data esspecially if there is a sequential element to the grouping.</p>
+                    <p className="flowingText">Under the hood, arrays are just objects with numbers for keys. They can be used to group or list bits of data especially if there is a sequential element to the grouping.</p>
                 <h3 className="sectionHeading">How do you write an Array?</h3>
-                    <p className="flowingText">There are a few interesting symantic things that you should bear in mind when writing an array, and they are as follows:</p>
+                    <p className="flowingText">There are a few interesting symantec things that you should bear in mind when writing an array, and they are as follows:</p>
                     <ul className="bulletedList">
-                            <li> {'[]'} - an aray is wrapped inside a pair of square brackets.</li>
+                            <li> {'[]'} - an array is wrapped inside a pair of square brackets.</li>
                             <li> , - each item in the array should separated from the next with a comma.</li>
                     </ul>
                     <p className="flowingText">Let's look at a few examples.</p>
