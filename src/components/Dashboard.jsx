@@ -24,6 +24,8 @@ import Lesson26 from "./Lesson26";
 import Lesson27 from "./Lesson27";
 import Lesson28 from "./Lesson28";
 import Lesson29 from "./Lesson29";
+import Lesson30 from "./Lesson30";
+import Lesson31 from "./Lesson31";
 
 class Dashboard extends Component {
     state = { 
@@ -284,6 +286,26 @@ class Dashboard extends Component {
                     <li>Spread and rest operators</li>
                 </ul>
                 <button className="ready" onClick={() => this.clickHandler(<Lesson29 callback={this.challengeCallback}/>)}>Jump In</button>
+            </div>
+            <div className="lessonCard">
+            <h2 className="lessonTitle">Lesson 30: Object Theory</h2>
+                <ul>
+                    <li>Adding and removing from objects</li>
+                    <li>In, Delete and For/In</li>
+                    <li>Iterating</li>
+                    <li>Adding and removing using methods</li>
+                    <li>Classes and Prototypes</li>
+                </ul>
+                <button className="ready" onClick={() => this.clickHandler(<Lesson30 callback={this.challengeCallback}/>)}>Jump In</button>
+            </div>
+            <div className="lessonCard">
+            <h2 className="lessonTitle">Lesson 31: Programing Best Practice</h2>
+                <ul>
+                    <li>KISS</li>
+                    <li>DRY</li>
+                    <li>SOLID</li>
+                </ul>
+                <button className="ready" onClick={() => this.clickHandler(<Lesson31 callback={this.challengeCallback}/>)}>Jump In</button>
             </div>
         </div>
         }

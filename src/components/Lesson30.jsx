@@ -259,6 +259,8 @@ console.log('GrizzlyBear', GrizzlyBear);
                 <p className="flowingText">There are a few problems with inheritance in JavaScript, however. Unlike other class-based languages, you can only inherit from one class. Additionally, if you do add properties to the super class specifically for one of the sub-classes, then all the sub-classes have access to those properties whether they need them or not.</p>
                 <p className="flowingText">To avoid some of these issues it is advisable to use the "factory pattern" which is a way of creating objects without directly using a constructor. Instead you make a function which acts as a generic interface for creating all kinds of objects. This interface is called a factory, and all you have to do is tell the factory what kind of component you want to make.</p>
                 <p className="flowingText">You can read more about how to set up factory objects <a href="https://addyosmani.com/resources/essentialjsdesignpatterns/book/#factorypatternjavascript">here</a>.</p>
+                <button className="ready" onClick={() => this.props.callback(<Challenge30 callback={this.props.callback}/>)}>Challenge</button>
+        
         </div>
     </div>
          );     
