@@ -311,9 +311,9 @@ class Dashboard extends Component {
             <div className="lessonCard">
             <h2 className="lessonTitle">Lesson 32: Document Object Model</h2>
                 <ul>
-                    <li>KISS</li>
-                    <li>DRY</li>
-                    <li>SOLID</li>
+                    <li>What is the DOM?</li>
+                    <li>How to do things with the DOM</li>
+                    <li>The DOM and Events</li>
                 </ul>
                 <button className="ready" onClick={() => this.clickHandler(<Lesson32 callback={this.challengeCallback}/>)}>Jump In</button>
             </div>
