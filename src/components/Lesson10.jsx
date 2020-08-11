@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
+import React, { Component } from '../../node_modules/react';
 import "../App.css";
 import Challenge10 from "./Challenge10";
-import {GoDashboard} from "react-icons/go";
+import {GoDashboard} from "../../node_modules/react-icons/go";
 import gradients from "../images/gradients.png";
 
 class Lesson10 extends Component {

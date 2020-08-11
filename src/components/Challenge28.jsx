@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {GoDashboard, GoBook} from "react-icons/go";
-import Lesson24 from './Lesson24';
+import Lesson28 from './Lesson28';
 
 class Challenge24 extends Component {
 

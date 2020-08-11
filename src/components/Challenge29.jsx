@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
-import {GoDashboard, GoBook} from "react-icons/go";
-import Lesson24 from './Lesson24';
+import React, { Component } from '../../node_modules/react';
+import {GoDashboard, GoBook} from "../../node_modules/react-icons/go";
+import Lesson29 from './Lesson29';
 
-class Challenge24 extends Component {
+class Challenge29 extends Component {
 
     state = {  }
 
@@ -31,4 +31,4 @@ class Challenge24 extends Component {
     }
 }
  
-export default Challenge24;
+export default Challenge29;

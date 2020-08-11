@@ -26,6 +26,7 @@ import Lesson28 from "./Lesson28";
 import Lesson29 from "./Lesson29";
 import Lesson30 from "./Lesson30";
 import Lesson31 from "./Lesson31";
+import Lesson32 from "./Lesson32";
 
 class Dashboard extends Component {
     state = { 
@@ -306,6 +307,15 @@ class Dashboard extends Component {
                     <li>SOLID</li>
                 </ul>
                 <button className="ready" onClick={() => this.clickHandler(<Lesson31 callback={this.challengeCallback}/>)}>Jump In</button>
+            </div>
+            <div className="lessonCard">
+            <h2 className="lessonTitle">Lesson 32: Document Object Model</h2>
+                <ul>
+                    <li>KISS</li>
+                    <li>DRY</li>
+                    <li>SOLID</li>
+                </ul>
+                <button className="ready" onClick={() => this.clickHandler(<Lesson32 callback={this.challengeCallback}/>)}>Jump In</button>
             </div>
         </div>
         }
