@@ -84,7 +84,8 @@ export function helperFunction() {
         </pre>
         <h3 className="sectionHeading">Including Third Party Scripts</h3>
             <p className="flowingText">There are lots of wonderful libraries available to you which could save you a ton of time.</p>
-            <p className="flowingText">But how should you include them? That's a great question. Simply include them in script tags but make sure they are all listed above your final custom script.</p>
+            <p className="flowingText">But how should you include them? That's a great question. Simply include them in script tags but you must absolutely make sure they are all listed above your final custom script.</p>
+            <p className="flowingText">In other words, your final script must come last in the order of scripts that you are importing.</p>
             <p className="flowingText">When installing third party scripts please be mindful of what you are downloading, check to make sure that that library has good docs and is able to help you in your specific circumstances.</p>
                  <button className="ready" onClick={() => this.props.callback(<Challenge33 callback={this.props.callback}/>)}>Challenge</button>
         
