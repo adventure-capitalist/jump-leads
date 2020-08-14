@@ -1,6 +1,6 @@
 import React, { Component } from '../../node_modules/react';
 import {GoDashboard, GoBook} from "../../node_modules/react-icons/go";
-import Lesson34 from './Lesson32';
+import Lesson34 from './Lesson34';
 
 class Challenge34 extends Component {
 
