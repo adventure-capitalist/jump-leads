@@ -138,7 +138,7 @@ fetch('http://example.com/movies.json', {
 </pre>
 
      
-     <button className="ready" onClick={() => this.props.callback(<Challenge34 callback={this.props.callback}/>)}>Challenge</button>
+     <button className="ready" onClick={() => this.props.callback(<Challenge35 callback={this.props.callback}/>)}>Challenge</button>
         
         </div>
     </div>

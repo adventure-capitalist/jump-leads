@@ -27,6 +27,10 @@ import Lesson29 from "./Lesson29";
 import Lesson30 from "./Lesson30";
 import Lesson31 from "./Lesson31";
 import Lesson32 from "./Lesson32";
+import Lesson33 from "./Lesson33";
+import Lesson34 from "./Lesson34";
+import Lesson35 from "./Lesson35";
+import Lesson36 from "./Lesson36";
 
 class Dashboard extends Component {
     state = { 
@@ -316,6 +320,42 @@ class Dashboard extends Component {
                     <li>The DOM and Events</li>
                 </ul>
                 <button className="ready" onClick={() => this.clickHandler(<Lesson32 callback={this.challengeCallback}/>)}>Jump In</button>
+            </div>
+            <div className="lessonCard">
+            <h2 className="lessonTitle">Lesson 33: JavaScript in the Browser</h2>
+                <ul>
+                    <li>Including JavaScript in webpages</li>
+                    <li>What tools does the browser have</li>
+                    <li>Third party scripts</li>
+                </ul>
+                <button className="ready" onClick={() => this.clickHandler(<Lesson32 callback={this.challengeCallback}/>)}>Jump In</button>
+            </div>
+            <div className="lessonCard">
+            <h2 className="lessonTitle">Lesson 34: JavaScript Transport</h2>
+                <ul>
+                    <li>What is Transport?</li>
+                    <li>Requesting Data</li>
+                    <li>HTTP response codes</li>
+                </ul>
+                <button className="ready" onClick={() => this.clickHandler(<Lesson32 callback={this.challengeCallback}/>)}>Jump In</button>
+            </div>
+            <div className="lessonCard">
+            <h2 className="lessonTitle">Lesson 35: APIs</h2>
+                <ul>
+                    <li>Intro to the Stack</li>
+                    <li>Callbacks/Promises/async &amp; await</li>
+                    <li>AJAX clients</li>
+                </ul>
+                <button className="ready" onClick={() => this.clickHandler(<Lesson35 callback={this.challengeCallback}/>)}>Jump In</button>
+            </div>
+            <div className="lessonCard">
+            <h2 className="lessonTitle">Lesson 36: Command Line Interface</h2>
+                <ul>
+                    <li>What is the Command Line?</li>
+                    <li>Command line Syntax</li>
+                    <li>Commands that are available</li>
+                </ul>
+                <button className="ready" onClick={() => this.clickHandler(<Lesson36 callback={this.challengeCallback}/>)}>Jump In</button>
             </div>
         </div>
         }
