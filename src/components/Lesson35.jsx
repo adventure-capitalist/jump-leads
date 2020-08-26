@@ -2,8 +2,7 @@ import React, { Component } from '../../node_modules/react';
 import "../App.css";
 import Challenge35 from "./Challenge35";
 import {GoDashboard} from "../../node_modules/react-icons/go";
-import stringify from "../images/stringify.jpg";
-import url from "../images/url.jpg";
+
 
 
 class Lesson35 extends Component {

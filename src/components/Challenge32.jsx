@@ -20,8 +20,8 @@ class Challenge32 extends Component {
                     <div className="lessonBody">
                         <p>Fork the Code Pen bellow follow the instructions written in the JavaScript column.</p>
                         <p>Here you will see several different challenges based on the DOM. Best of luck and have fun!</p>
-                        <p className="codepen" data-height="309" data-theme-id="light" data-default-tab="css,result" data-user="ashleylaurel" data-slug-hash="rNxVzxY" style={{height: "309px", boxSizing: "border-box", display: "flex", alignItems: "center", justifyContent: "center", border: "2px solid", margin: "1em 0", padding: "1em"}} data-pen-title="WisDOM">
-                            <span>See the Pen <a href="https://codepen.io/ashleylaurel/pen/RwaWJaj">WisDOM</a></span>
+                        <p className="codepen" data-height="309" data-theme-id="light" data-default-tab="css,result" data-user="jmsherry" data-slug-hash="rNxVzxY" style={{height: "309px", boxSizing: "border-box", display: "flex", alignItems: "center", justifyContent: "center", border: "2px solid", margin: "1em 0", padding: "1em"}} data-pen-title="Traffic Light Challenge">
+                            <span>See the Pen <a href="https://codepen.io/jmsherry/pen/xXprRg">Traffic Light Challenge</a></span>
                         </p>
                     </div>
         

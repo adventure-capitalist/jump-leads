@@ -26,7 +26,7 @@ class Lesson34 extends Component {
             <p className="flowingText">About page: <a href="https://cat-bounce.com">https://cat-bounce.com/about/</a></p>
             <p className="flowingText">The navigation syntax is very familiar because it's very similar to the syntax used in file navigation on your computer (C:\Users\Admin\Downloads\Kartoffelsalatrezept.docx) </p>
             <p className="flowingText">Here is a closer look at the constituent parts of a URL if you need a refresher:</p>
-                <img src={url}/>
+                <img className="graphic" src={url}/>
             <p className="flowingText">That's about where the similarities end though, on the web you can ask for more than websites and depending on what you are asking for, you might need to use a different kind of transport: </p>
             <ul className="bulletedList">
                         <li>HTTP(S) - HyperText Transfer Protocol (Secure) sends static code files including .doc .pdf, .js, .css and data like xml and JSON</li>
@@ -46,7 +46,7 @@ class Lesson34 extends Component {
                 <li>JSON.parse() - turns JSON into JavaScript for normal programing.</li>
             </ul>
             <p className="flowingText">Here is an example to demonstrate the difference between normal JavaScript and JSON syntax.</p>
-                <img src={stringify}/>
+                <img className="graphic" src={stringify}/>
         <h3 className="sectionHeading">Making a request for data</h3>
             <p className="flowingText">So you have the right domain/url and you know where your data is at. So how do actually request to do something?</p>
             <p className="flowingText">There are a number of transport verbs that you'll need to know in order to make transport happen these are the most popular:</p>
