@@ -1,6 +1,5 @@
 import React, { Component } from '../../node_modules/react';
 import "../App.css";
-import Challenge37 from "./Challenge37";
 import {GoDashboard} from "../../node_modules/react-icons/go";
 import Essays from "../images/Essays.jpg";
 import git from "../images/git.png";
