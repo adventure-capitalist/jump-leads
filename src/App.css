@@ -29,13 +29,14 @@ h1{
   border: none;
   padding: 10px;
   width: 80px;
-  margin-left: calc(12.5vw - 50px);
-  margin-right: calc(12.5vw - 50px);
+  margin-left: 110px;
 }
 
 .lessonCard {
+  display: inline-block;
   border: black 2px solid;
-  width: 25vw;
+  width: 300px;
+  padding: 2vh;
   padding-bottom: 4vh;
   margin: 3vh;
 }
@@ -72,5 +73,24 @@ h1{
 .bulletedList li {
   margin-left: 3vw;
 }
+
+.dashboardHolder {
+  padding: 5em;
+  /* column-fill: auto; */
+  column-count: 3;
+}
+
+@media only screen and (max-width: 1025px) {
+  .dashboardHolder {
+    column-count: 2;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .dashboardHolder {
+    column-count: 1;
+  }
+}
+
 
 

@@ -2,7 +2,7 @@ import React, { Component } from '../../node_modules/react';
 import "../App.css";
 import Challenge34 from "./Challenge34";
 import {GoDashboard} from "../../node_modules/react-icons/go";
-import stringify from "../images/stringify.jpg";
+import stringify from "../images/Stringify.jpg";
 import url from "../images/url.jpg";
 
 

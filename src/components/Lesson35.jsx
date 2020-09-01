@@ -43,7 +43,7 @@ class Lesson35 extends Component {
 
 // DECLARING THE HIGHER ORDER FUNCTION WHICH TAKES TWO ARGUMENTS, SUBJECT AND A CALLBACK
 function doHomework(subject, callbackPlaceholder) {
-    alert(\`Starting my ${subject} homework.\`);
+    alert(\`Starting my \${subject} homework.\`);
     callbackPlaceholder();
 }
 

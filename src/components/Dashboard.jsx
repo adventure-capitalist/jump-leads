@@ -31,6 +31,10 @@ import Lesson33 from "./Lesson33";
 import Lesson34 from "./Lesson34";
 import Lesson35 from "./Lesson35";
 import Lesson36 from "./Lesson36";
+import Lesson37 from "./Lesson37";
+import Lesson38 from "./Lesson38";
+import Lesson39 from "./Lesson39";
+import Lesson40 from "./Lesson40";
 
 class Dashboard extends Component {
     state = { 
@@ -328,7 +332,7 @@ class Dashboard extends Component {
                     <li>What tools does the browser have</li>
                     <li>Third party scripts</li>
                 </ul>
-                <button className="ready" onClick={() => this.clickHandler(<Lesson32 callback={this.challengeCallback}/>)}>Jump In</button>
+                <button className="ready" onClick={() => this.clickHandler(<Lesson33 callback={this.challengeCallback}/>)}>Jump In</button>
             </div>
             <div className="lessonCard">
             <h2 className="lessonTitle">Lesson 34: JavaScript Transport</h2>
@@ -337,7 +341,7 @@ class Dashboard extends Component {
                     <li>Requesting Data</li>
                     <li>HTTP response codes</li>
                 </ul>
-                <button className="ready" onClick={() => this.clickHandler(<Lesson32 callback={this.challengeCallback}/>)}>Jump In</button>
+                <button className="ready" onClick={() => this.clickHandler(<Lesson34 callback={this.challengeCallback}/>)}>Jump In</button>
             </div>
             <div className="lessonCard">
             <h2 className="lessonTitle">Lesson 35: APIs</h2>
@@ -356,6 +360,42 @@ class Dashboard extends Component {
                     <li>Commands that are available</li>
                 </ul>
                 <button className="ready" onClick={() => this.clickHandler(<Lesson36 callback={this.challengeCallback}/>)}>Jump In</button>
+            </div>
+            <div className="lessonCard">
+            <h2 className="lessonTitle">Lesson 37: Git and Github</h2>
+                <ul>
+                    <li>Getting started with git</li>
+                    <li>Your first commit</li>
+                    <li>Git branches</li>
+                </ul>
+                <button className="ready" onClick={() => this.clickHandler(<Lesson37 callback={this.challengeCallback}/>)}>Jump In</button>
+            </div>
+            <div className="lessonCard">
+            <h2 className="lessonTitle">Lesson 38: JavaScript Animation</h2>
+                <ul>
+                    <li>Why Animation</li>
+                    <li>SVG and JavaScript Animation</li>
+                    <li>Third Party Libraries</li>
+                </ul>
+                <button className="ready" onClick={() => this.clickHandler(<Lesson38 callback={this.challengeCallback}/>)}>Jump In</button>
+            </div>
+            <div className="lessonCard">
+            <h2 className="lessonTitle">Lesson 39: Introduction to React</h2>
+                <ul>
+                    <li>History of React</li>
+                    <li>Single Page Applications</li>
+                    <li>The React Dynamics</li>
+                </ul>
+                <button className="ready" onClick={() => this.clickHandler(<Lesson39 callback={this.challengeCallback}/>)}>Jump In</button>
+            </div>
+            <div className="lessonCard">
+            <h2 className="lessonTitle">Lesson 40: React Props</h2>
+                <ul>
+                    <li>Rendering Components with Props</li>
+                    <li>Passing Props</li>
+                    <li>Immutability of Props</li>
+                </ul>
+                <button className="ready" onClick={() => this.clickHandler(<Lesson40 callback={this.challengeCallback}/>)}>Jump In</button>
             </div>
         </div>
         }
