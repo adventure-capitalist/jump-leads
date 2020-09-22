@@ -35,6 +35,7 @@ import Lesson37 from "./Lesson37";
 import Lesson38 from "./Lesson38";
 import Lesson39 from "./Lesson39";
 import Lesson40 from "./Lesson40";
+import Lesson40 from "./Lesson41";
 
 class Dashboard extends Component {
     state = { 
@@ -396,6 +397,15 @@ class Dashboard extends Component {
                     <li>Immutability of Props</li>
                 </ul>
                 <button className="ready" onClick={() => this.clickHandler(<Lesson40 callback={this.challengeCallback}/>)}>Jump In</button>
+            </div>
+            <div className="lessonCard" style={{backgroundColor: "#c8f2f7"}}>
+            <h2 className="lessonTitle">Lesson 40: React State</h2>
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <button className="ready" onClick={() => this.clickHandler(<Lesson41 callback={this.challengeCallback}/>)}>Jump In</button>
             </div>
         </div>
         }
