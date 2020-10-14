@@ -35,7 +35,11 @@ import Lesson37 from "./Lesson37";
 import Lesson38 from "./Lesson38";
 import Lesson39 from "./Lesson39";
 import Lesson40 from "./Lesson40";
-import Lesson40 from "./Lesson41";
+import Lesson41 from "./Lesson41";
+import Lesson42 from "./Lesson42";
+import Lesson43 from "./Lesson43";
+import Lesson44 from "./Lesson44";
+import Lesson45 from "./Lesson45";
 
 class Dashboard extends Component {
     state = { 
@@ -399,13 +403,76 @@ class Dashboard extends Component {
                 <button className="ready" onClick={() => this.clickHandler(<Lesson40 callback={this.challengeCallback}/>)}>Jump In</button>
             </div>
             <div className="lessonCard" style={{backgroundColor: "#c8f2f7"}}>
-            <h2 className="lessonTitle">Lesson 40: React State</h2>
+            <h2 className="lessonTitle">Lesson 41: React State</h2>
                 <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
+                    <li>Uniqueness of state</li>
+                    <li>Writing to state</li>
+                    <li>State updates</li>
                 </ul>
                 <button className="ready" onClick={() => this.clickHandler(<Lesson41 callback={this.challengeCallback}/>)}>Jump In</button>
+            </div>
+            <div className="lessonCard" style={{backgroundColor: "#c8f2f7"}}>
+            <h2 className="lessonTitle">Lesson 42: React Hooks</h2>
+                <ul>
+                    <li>State functionality</li>
+                    <li>useContext</li>
+                    <li>DIY hooks</li>
+                </ul>
+                <button className="ready" onClick={() => this.clickHandler(<Lesson42 callback={this.challengeCallback}/>)}>Jump In</button>
+            </div>
+            <div className="lessonCard" style={{backgroundColor: "#c8f2f7"}}>
+            <h2 className="lessonTitle">Lesson 43: React Context API</h2>
+                <ul>
+                    <li>Context API</li>
+                    <li>Reading context</li>
+                    <li>Writing context</li>
+                </ul>
+                <button className="ready" onClick={() => this.clickHandler(<Lesson43 callback={this.challengeCallback}/>)}>Jump In</button>
+            </div>
+            <div className="lessonCard" style={{backgroundColor: "#c8f2f7"}}>
+            <h2 className="lessonTitle">Lesson 44: Graphing and Headers</h2>
+                <ul>
+                    <li>JavaScript Canvas</li>
+                    <li>Graphing libraries</li>
+                    <li>Realtime data</li>
+                </ul>
+                <button className="ready" onClick={() => this.clickHandler(<Lesson44 callback={this.challengeCallback}/>)}>Jump In</button>
+            </div>
+            <div className="lessonCard" style={{backgroundColor: "#c8f2f7"}}>
+            <h2 className="lessonTitle">Lesson 45: Serverless</h2>
+                <ul>
+                    <li>Functions as a service</li>
+                    <li>Pros to Serverless</li>
+                    <li>Cons to Serverless</li>
+                </ul>
+                <button className="ready" onClick={() => this.clickHandler(<Lesson45 callback={this.challengeCallback}/>)}>Jump In</button>
+            </div>
+            <div className="lessonCard" style={{backgroundColor: "#c8f2f7"}}>
+            <h2 className="lessonTitle">Lesson 46: Offline</h2>
+                <ul>
+                    <li>Web workers</li>
+                    <li>Service workers</li>
+                    <li>Progressive web apps</li>
+                </ul>
+                <button className="ready" onClick={() => this.clickHandler(<Lesson46 callback={this.challengeCallback}/>)}>Jump In</button>
+            </div>
+            <div className="lessonCard" style={{backgroundColor: "#c8f2f7"}}>
+            <h2 className="lessonTitle">Lesson 47: GraphQL</h2>
+                <ul>
+                    <li>GraphQL</li>
+                    <li>GraphCMS</li>
+                    <li>GraphiQL</li>
+                </ul>
+                <button className="ready" onClick={() => this.clickHandler(<Lesson47 callback={this.challengeCallback}/>)}>Jump In</button>
+            </div>
+            <div className="lessonCard" style={{backgroundColor: "#c8f2f7"}}>
+            <h2 className="lessonTitle">Lesson 48: Servers</h2>
+                <ul>
+                    <li>Express JS</li>
+                    <li>Routes</li>
+                    <li>Middleware</li>
+                </ul>
+                <button className="ready" onClick={() => this.clickHandler(<Lesson48 callback={this.challengeCallback}/>)}>Jump In</button>
             </div>
         </div>
         }

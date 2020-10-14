@@ -10,7 +10,7 @@ class Challenge44 extends Component {
         return ( 
         <div className="mainHolder">
             <div className="lessonHeader">
-                <h2 className="lessonTitle">Lesson 44: React Context API</h2>
+                <h2 className="lessonTitle">Lesson 44: Graphing and Headers</h2>
                 <div class="icons">
                     <GoBook onClick={() => this.props.callback(<Lesson44 callback={this.props.callback}/>)} className="dashIcon"/>
                     <GoDashboard onClick={() => this.props.callback(null)} className="dashIcon"/>
