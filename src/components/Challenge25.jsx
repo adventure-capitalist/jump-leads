@@ -12,7 +12,7 @@ class Challenge25 extends Component {
             <div className="lessonHeader">
                 <h2 className="lessonTitle">Lesson 25: Functions</h2>
                 <div class="icons">
-                    <GoBook onClick={() => this.props.callback(<Lesson24 callback={this.props.callback}/>)} className="dashIcon"/>
+                    <GoBook onClick={() => this.props.callback(<Lesson25 callback={this.props.callback}/>)} className="dashIcon"/>
                     <GoDashboard onClick={() => this.props.callback(null)} className="dashIcon"/>
                 </div>
             </div>

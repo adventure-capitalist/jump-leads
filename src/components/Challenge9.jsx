@@ -18,8 +18,11 @@ class Challenge9 extends Component {
             </div>
             <div className="spacer"></div>
             <div className="lessonBody">
-                
-            
+                <p className="flowingText">For this week's challenge, go ahead and beat these two games to help you master the art of flexbox.</p>
+                <p className="flowingText">1) <a href="https://flexboxfroggy.com/">Flexbox Froggy</a></p>
+                <p className="flowingText">2) <a href="http://www.flexboxdefense.com/">Flexbox Defense</a></p>
+                <p className="flowingText">3) <a href="https://geddski.teachable.com/p/flexbox-zombies">Flexbox Zombies</a></p>
+                <p className="flowingText">Feel free to refer back to the lesson, should you get stuck.</p>
             </div>
         </div> 
         );
