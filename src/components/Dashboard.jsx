@@ -40,6 +40,9 @@ import Lesson42 from "./Lesson42";
 import Lesson43 from "./Lesson43";
 import Lesson44 from "./Lesson44";
 import Lesson45 from "./Lesson45";
+import Lesson46 from "./Lesson46";
+import Lesson47 from "./Lesson47";
+import Lesson48 from "./Lesson48";
 
 class Dashboard extends Component {
     state = { 
